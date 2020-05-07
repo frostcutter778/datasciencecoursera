@@ -53,11 +53,11 @@ setAllInOne = rbind(mrg_train, mrg_test)
 
 colNames = colnames(setAllInOne)
 
-#We need to get a subset of all the mean and standards and the correspondongin activityID and subjectID 
+#We need to get a subset of all the mean and standards and the corresponding activityID and subjectID 
 
 mean_and_std = (grepl("activityId" , colNames) | grepl("subjectId" , colNames) | grepl("mean.." , colNames) | grepl("std.." , colNames))
 
-#A subtset has to be created to get the required dataset
+#A subset has to be created to get the required dataset
 
 setForMeanAndStd <- setAllInOne[ , mean_and_std == TRUE]
 
