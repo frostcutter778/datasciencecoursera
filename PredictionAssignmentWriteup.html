@@ -1,0 +1,939 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:17.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:17.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:14.4px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:14.4px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:10.0px;color:rgb(33,73,135);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:10.0px;color:rgb(33,73,135);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,206);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,206);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:10.0px;color:rgb(79,153,5);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:10.0px;color:rgb(79,153,5);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:10.0px;color:rgb(142,89,2);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:10.0px;color:rgb(142,89,2);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:10.0px;color:rgb(206,91,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:10.0px;color:rgb(206,91,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:10.0px;color:rgb(33,73,135);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:10.0px;color:rgb(33,73,135);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:1.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:1.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:2.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:2.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:2.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:2.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background01.jpg" width=612 height=792></div>
+<div style="position:absolute;left:193.22px;top:106.59px" class="cls_002"><span class="cls_002">Prediction-Assignment-Writeup1</span></div>
+<div style="position:absolute;left:286.65px;top:146.54px" class="cls_003"><span class="cls_003">Adittya</span></div>
+<div style="position:absolute;left:271.70px;top:175.72px" class="cls_003"><span class="cls_003">May 16, 2020</span></div>
+<div style="position:absolute;left:72.00px;top:219.49px" class="cls_004"><span class="cls_004">1. Overview</span></div>
+<div style="position:absolute;left:72.00px;top:245.67px" class="cls_005"><span class="cls_005">This document is the final report of the Peer Assessment project from Coursera’s course Practical Machine</span></div>
+<div style="position:absolute;left:72.00px;top:257.62px" class="cls_005"><span class="cls_005">Learning, as part of the Specialization in Data Science.  It was built in RStudio, using its knitr functions,</span></div>
+<div style="position:absolute;left:72.00px;top:269.58px" class="cls_005"><span class="cls_005">meant to be published in html format. This analysis meant to be the basis for the course quiz and a prediction</span></div>
+<div style="position:absolute;left:72.00px;top:281.54px" class="cls_005"><span class="cls_005">assignment writeup. The main goal of the project is to predict the manner in which 6 participants performed</span></div>
+<div style="position:absolute;left:72.00px;top:293.49px" class="cls_005"><span class="cls_005">some exercise as described below.  This is the “classe” variable in the training set.  The machine learning</span></div>
+<div style="position:absolute;left:72.00px;top:305.45px" class="cls_005"><span class="cls_005">algorithm described here is applied to the 20 test cases available in the test data and the predictions are</span></div>
+<div style="position:absolute;left:72.00px;top:317.40px" class="cls_005"><span class="cls_005">submitted in appropriate format to the Course Project Prediction Quiz for automated grading.</span></div>
+<div style="position:absolute;left:72.00px;top:348.94px" class="cls_004"><span class="cls_004">2. Background</span></div>
+<div style="position:absolute;left:72.00px;top:375.13px" class="cls_005"><span class="cls_005">Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount</span></div>
+<div style="position:absolute;left:72.00px;top:387.08px" class="cls_005"><span class="cls_005">of data about personal activity relatively inexpensively.  These type of devices are part of the quantified</span></div>
+<div style="position:absolute;left:72.00px;top:399.04px" class="cls_005"><span class="cls_005">self movement - a group of enthusiasts who take measurements about themselves regularly to improve</span></div>
+<div style="position:absolute;left:72.00px;top:410.99px" class="cls_005"><span class="cls_005">their health, to find patterns in their behavior, or because they are tech geeks.  One thing that people</span></div>
+<div style="position:absolute;left:72.00px;top:422.95px" class="cls_005"><span class="cls_005">regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they</span></div>
+<div style="position:absolute;left:72.00px;top:434.90px" class="cls_005"><span class="cls_005">do it.  In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and</span></div>
+<div style="position:absolute;left:72.00px;top:446.86px" class="cls_005"><span class="cls_005">dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different</span></div>
+<div style="position:absolute;left:72.00px;top:458.81px" class="cls_005"><span class="cls_005">ways.  More information is available from the website here:</span></div>
+<div style="position:absolute;left:343.65px;top:458.81px" class="cls_005"><span class="cls_005">[</span><A HREF="http://groupware.les.inf.puc-rio.br/har">http://groupware.les.inf.puc-rio.br/har</A><span class="cls_005">]<A HREF="http://groupware.les.inf.puc-rio.br/har">http:</A> </div>
+<div style="position:absolute;left:72.00px;top:470.77px" class="cls_005"><span class="cls_005"> </span><A HREF="http://groupware.les.inf.puc-rio.br/har">//groupware.les.inf.puc-rio.br/har</A> (see the section on the Weight Lifting Exercise Dataset).</div>
+<div style="position:absolute;left:72.00px;top:502.31px" class="cls_004"><span class="cls_004">3. Data Loading and Exploratory Analysis</span></div>
+<div style="position:absolute;left:72.00px;top:530.08px" class="cls_006"><span class="cls_006">a. Data Source</span></div>
+<div style="position:absolute;left:72.00px;top:562.09px" class="cls_005"><span class="cls_005">The training data for this project are available here:</span></div>
+<div style="position:absolute;left:72.00px;top:579.85px" class="cls_005"><span class="cls_005">[Training Set]</span><A HREF="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv</A> </div>
+<div style="position:absolute;left:72.00px;top:597.60px" class="cls_005"><span class="cls_005">The test data are available here:</span></div>
+<div style="position:absolute;left:72.00px;top:615.36px" class="cls_005"><span class="cls_005">[Test Set]</span><A HREF="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv</A> </div>
+<div style="position:absolute;left:72.00px;top:649.56px" class="cls_006"><span class="cls_006">b. Environment Setup</span></div>
+<div style="position:absolute;left:72.00px;top:692.94px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(knitr)</span></div>
+<div style="position:absolute;left:72.00px;top:704.89px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(caret)</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background02.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:72.00px" class="cls_005"><span class="cls_005">## Loading required package: lattice</span></div>
+<div style="position:absolute;left:72.00px;top:99.52px" class="cls_005"><span class="cls_005">## Loading required package: ggplot2</span></div>
+<div style="position:absolute;left:72.00px;top:125.06px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(rpart)</span></div>
+<div style="position:absolute;left:72.00px;top:137.02px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(rpart.plot)</span></div>
+<div style="position:absolute;left:72.00px;top:148.97px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(rattle)</span></div>
+<div style="position:absolute;left:72.00px;top:181.64px" class="cls_005"><span class="cls_005">## Rattle: A free graphical interface for data science with</span></div>
+<div style="position:absolute;left:385.82px;top:181.64px" class="cls_005"><span class="cls_005">R.</span></div>
+<div style="position:absolute;left:72.00px;top:193.60px" class="cls_005"><span class="cls_005">## Version 5.3.0 Copyright (c) 2006-2018 Togaware Pty Ltd.</span></div>
+<div style="position:absolute;left:72.00px;top:205.55px" class="cls_005"><span class="cls_005">## Type 'rattle()' to shake, rattle, and roll your data.</span></div>
+<div style="position:absolute;left:72.00px;top:231.09px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(randomForest)</span></div>
+<div style="position:absolute;left:72.00px;top:263.76px" class="cls_005"><span class="cls_005">## randomForest 4.6-14</span></div>
+<div style="position:absolute;left:72.00px;top:291.29px" class="cls_005"><span class="cls_005">## Type rfNews() to see new features/changes/bug fixes.</span></div>
+<div style="position:absolute;left:72.00px;top:318.81px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:330.76px" class="cls_005"><span class="cls_005">## Attaching package: 'randomForest'</span></div>
+<div style="position:absolute;left:72.00px;top:358.29px" class="cls_005"><span class="cls_005">## The following object is masked from 'package:rattle':</span></div>
+<div style="position:absolute;left:72.00px;top:370.24px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:382.20px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:382.20px" class="cls_005"><span class="cls_005">importance</span></div>
+<div style="position:absolute;left:72.00px;top:409.72px" class="cls_005"><span class="cls_005">## The following object is masked from 'package:ggplot2':</span></div>
+<div style="position:absolute;left:72.00px;top:421.68px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:433.63px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:433.63px" class="cls_005"><span class="cls_005">margin</span></div>
+<div style="position:absolute;left:72.00px;top:459.17px" class="cls_007"><span class="cls_007">library</span><span class="cls_005">(corrplot)</span></div>
+<div style="position:absolute;left:72.00px;top:491.90px" class="cls_005"><span class="cls_005">## corrplot 0.84 loaded</span></div>
+<div style="position:absolute;left:72.00px;top:517.44px" class="cls_007"><span class="cls_007">set.seed</span><span class="cls_005">(</span><span class="cls_008">301</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:555.68px" class="cls_006"><span class="cls_006">c. Data Loading and Cleaning</span></div>
+<div style="position:absolute;left:72.00px;top:587.80px" class="cls_005"><span class="cls_005">The next step is loading the dataset from the URL provided above. The training dataset is then partinioned</span></div>
+<div style="position:absolute;left:72.00px;top:599.76px" class="cls_005"><span class="cls_005">in 2 to create a Training set (70% of the data) for the modeling process and a Test set (with the remaining</span></div>
+<div style="position:absolute;left:72.00px;top:611.71px" class="cls_005"><span class="cls_005">30%) for the validations.  The testing dataset is not changed and will only be used for the quiz results</span></div>
+<div style="position:absolute;left:72.00px;top:623.67px" class="cls_005"><span class="cls_005">generation. Note that the echo = FALSE parameter was added to the code chunk to prevent printing of the</span></div>
+<div style="position:absolute;left:72.00px;top:635.62px" class="cls_005"><span class="cls_005">R code that generated the plot.</span></div>
+<div style="position:absolute;left:72.00px;top:659.23px" class="cls_005"><span class="cls_005">TrainUrl &lt;-</span><span class="cls_009"> "<A HREF="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"/">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"</A> </span></div>
+<div style="position:absolute;left:72.00px;top:671.18px" class="cls_005"><span class="cls_005">TestUrl</span></div>
+<div style="position:absolute;left:119.07px;top:671.18px" class="cls_005"><span class="cls_005">&lt;-</span><span class="cls_009"> "<A HREF="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"/">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"</A> </span></div>
+<div style="position:absolute;left:72.00px;top:683.14px" class="cls_005"><span class="cls_005">TrainFile&lt;-</span><span class="cls_009">"pml-traininig.csv"</span></div>
+<div style="position:absolute;left:72.00px;top:695.09px" class="cls_005"><span class="cls_005">TestFile&lt;-</span><span class="cls_009">"pml-testing.csv"</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background03.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:74.98px" class="cls_010"><span class="cls_010"># downloading the datasets</span></div>
+<div style="position:absolute;left:72.00px;top:86.93px" class="cls_007"><span class="cls_007">if</span><span class="cls_005">(</span><span class="cls_011">!</span><span class="cls_007">file.exists</span><span class="cls_005">(TrainFile))</span></div>
+<div style="position:absolute;left:72.00px;top:98.89px" class="cls_005"><span class="cls_005">{</span></div>
+<div style="position:absolute;left:92.92px;top:110.84px" class="cls_007"><span class="cls_007">download.file</span><span class="cls_005">(TrainUrl,</span><span class="cls_012">destfile =</span><span class="cls_005"> TrainFile)</span></div>
+<div style="position:absolute;left:72.00px;top:122.80px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:72.00px;top:134.76px" class="cls_005"><span class="cls_005">training &lt;-</span><span class="cls_007"> read.csv</span><span class="cls_005">(TrainFile)</span></div>
+<div style="position:absolute;left:72.00px;top:146.71px" class="cls_007"><span class="cls_007">if</span><span class="cls_005">(</span><span class="cls_011">!</span><span class="cls_007">file.exists</span><span class="cls_005">(TestFile))</span></div>
+<div style="position:absolute;left:72.00px;top:158.67px" class="cls_005"><span class="cls_005">{</span></div>
+<div style="position:absolute;left:92.92px;top:170.62px" class="cls_007"><span class="cls_007">download.file</span><span class="cls_005">(TestUrl,</span><span class="cls_012">destfile =</span><span class="cls_005"> TestFile)</span></div>
+<div style="position:absolute;left:72.00px;top:182.58px" class="cls_005"><span class="cls_005">}</span></div>
+<div style="position:absolute;left:72.00px;top:194.53px" class="cls_005"><span class="cls_005">testing</span></div>
+<div style="position:absolute;left:119.07px;top:194.53px" class="cls_005"><span class="cls_005">&lt;-</span><span class="cls_007"> read.csv</span><span class="cls_005">(TestFile)</span></div>
+<div style="position:absolute;left:72.00px;top:218.44px" class="cls_010"><span class="cls_010"># creating a partition using caret with the training dataset on 70,30</span></div>
+<div style="position:absolute;left:438.13px;top:218.44px" class="cls_010"><span class="cls_010">ratio</span></div>
+<div style="position:absolute;left:72.00px;top:230.40px" class="cls_005"><span class="cls_005">inTrain</span></div>
+<div style="position:absolute;left:119.07px;top:230.40px" class="cls_005"><span class="cls_005">&lt;-</span><span class="cls_007"> createDataPartition</span><span class="cls_005">(training</span><span class="cls_011">$</span><span class="cls_005">classe,</span></div>
+<div style="position:absolute;left:328.29px;top:230.40px" class="cls_012"><span class="cls_012">p=</span><span class="cls_008">0.7</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:364.90px;top:230.40px" class="cls_012"><span class="cls_012">list=</span><span class="cls_010">FALSE</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:254.31px" class="cls_005"><span class="cls_005">TrainSet &lt;- training[inTrain, ]</span></div>
+<div style="position:absolute;left:72.00px;top:278.22px" class="cls_005"><span class="cls_005">TestSet</span></div>
+<div style="position:absolute;left:119.07px;top:278.22px" class="cls_005"><span class="cls_005">&lt;- training[</span><span class="cls_011">-</span><span class="cls_005">inTrain, ]</span></div>
+<div style="position:absolute;left:72.00px;top:290.17px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TrainSet)</span></div>
+<div style="position:absolute;left:72.00px;top:321.04px" class="cls_005"><span class="cls_005">## [1] 13737</span></div>
+<div style="position:absolute;left:150.46px;top:321.04px" class="cls_005"><span class="cls_005">160</span></div>
+<div style="position:absolute;left:72.00px;top:346.18px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TestSet)</span></div>
+<div style="position:absolute;left:72.00px;top:377.04px" class="cls_005"><span class="cls_005">## [1] 5885</span></div>
+<div style="position:absolute;left:139.99px;top:377.04px" class="cls_005"><span class="cls_005">160</span></div>
+<div style="position:absolute;left:72.00px;top:401.23px" class="cls_010"><span class="cls_010"># removing variables with Nearly Zero Variance</span></div>
+<div style="position:absolute;left:72.00px;top:413.19px" class="cls_005"><span class="cls_005">NZV &lt;-</span><span class="cls_007"> nearZeroVar</span><span class="cls_005">(TrainSet)</span></div>
+<div style="position:absolute;left:72.00px;top:425.14px" class="cls_005"><span class="cls_005">TrainSet &lt;- TrainSet[,</span><span class="cls_011"> -</span><span class="cls_005">NZV]</span></div>
+<div style="position:absolute;left:72.00px;top:437.10px" class="cls_005"><span class="cls_005">TestSet</span></div>
+<div style="position:absolute;left:119.07px;top:437.10px" class="cls_005"><span class="cls_005">&lt;- TestSet[,</span><span class="cls_011"> -</span><span class="cls_005">NZV]</span></div>
+<div style="position:absolute;left:72.00px;top:449.05px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TestSet)</span></div>
+<div style="position:absolute;left:72.00px;top:479.92px" class="cls_005"><span class="cls_005">## [1] 5885</span></div>
+<div style="position:absolute;left:139.99px;top:479.92px" class="cls_005"><span class="cls_005">105</span></div>
+<div style="position:absolute;left:72.00px;top:505.06px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TrainSet)</span></div>
+<div style="position:absolute;left:72.00px;top:535.92px" class="cls_005"><span class="cls_005">## [1] 13737</span></div>
+<div style="position:absolute;left:150.46px;top:535.92px" class="cls_005"><span class="cls_005">105</span></div>
+<div style="position:absolute;left:72.00px;top:560.11px" class="cls_010"><span class="cls_010"># removing variables that are mostly NA</span></div>
+<div style="position:absolute;left:72.00px;top:572.07px" class="cls_005"><span class="cls_005">AllNA</span></div>
+<div style="position:absolute;left:119.07px;top:572.07px" class="cls_005"><span class="cls_005">&lt;-</span><span class="cls_007"> sapply</span><span class="cls_005">(TrainSet,</span><span class="cls_007"> function</span><span class="cls_005">(x)</span><span class="cls_007"> mean</span><span class="cls_005">(</span><span class="cls_007">is.na</span><span class="cls_005">(x)))</span><span class="cls_011"> ></span></div>
+<div style="position:absolute;left:380.59px;top:572.07px" class="cls_008"><span class="cls_008">0.95</span></div>
+<div style="position:absolute;left:72.00px;top:584.02px" class="cls_005"><span class="cls_005">TrainSet &lt;- TrainSet[, AllNA</span><span class="cls_011">==</span><span class="cls_010">FALSE</span><span class="cls_005">]</span></div>
+<div style="position:absolute;left:72.00px;top:595.98px" class="cls_005"><span class="cls_005">TestSet</span></div>
+<div style="position:absolute;left:119.07px;top:595.98px" class="cls_005"><span class="cls_005">&lt;- TestSet[, AllNA</span><span class="cls_011">==</span><span class="cls_010">FALSE</span><span class="cls_005">]</span></div>
+<div style="position:absolute;left:72.00px;top:607.93px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TestSet)</span></div>
+<div style="position:absolute;left:72.00px;top:638.80px" class="cls_005"><span class="cls_005">## [1] 5885</span></div>
+<div style="position:absolute;left:145.23px;top:638.80px" class="cls_005"><span class="cls_005">59</span></div>
+<div style="position:absolute;left:72.00px;top:663.94px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TrainSet)</span></div>
+<div style="position:absolute;left:72.00px;top:694.80px" class="cls_005"><span class="cls_005">## [1] 13737</span></div>
+<div style="position:absolute;left:155.69px;top:694.80px" class="cls_005"><span class="cls_005">59</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background04.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:75.93px" class="cls_010"><span class="cls_010"># removing identification only variables (columns 1 to 5)</span></div>
+<div style="position:absolute;left:72.00px;top:87.89px" class="cls_005"><span class="cls_005">TrainSet &lt;- TrainSet[,</span><span class="cls_011"> -</span><span class="cls_005">(</span><span class="cls_008">1</span><span class="cls_011">:</span><span class="cls_008">5</span><span class="cls_005">)]</span></div>
+<div style="position:absolute;left:72.00px;top:99.84px" class="cls_005"><span class="cls_005">TestSet</span></div>
+<div style="position:absolute;left:119.07px;top:99.84px" class="cls_005"><span class="cls_005">&lt;- TestSet[,</span><span class="cls_011"> -</span><span class="cls_005">(</span><span class="cls_008">1</span><span class="cls_011">:</span><span class="cls_008">5</span><span class="cls_005">)]</span></div>
+<div style="position:absolute;left:72.00px;top:111.80px" class="cls_007"><span class="cls_007">dim</span><span class="cls_005">(TrainSet)</span></div>
+<div style="position:absolute;left:72.00px;top:137.67px" class="cls_005"><span class="cls_005">## [1] 13737</span></div>
+<div style="position:absolute;left:155.69px;top:137.67px" class="cls_005"><span class="cls_005">54</span></div>
+<div style="position:absolute;left:72.00px;top:159.73px" class="cls_005"><span class="cls_005">After cleaning, we can see that the number of vairables for the analysis are now only 53.</span></div>
+<div style="position:absolute;left:72.00px;top:192.46px" class="cls_006"><span class="cls_006">d.Coorection Analysis</span></div>
+<div style="position:absolute;left:72.00px;top:223.67px" class="cls_005"><span class="cls_005">A correlation among variables is analysed before proceeding to the modeling procedures.</span></div>
+<div style="position:absolute;left:72.00px;top:243.63px" class="cls_005"><span class="cls_005">corMatrix &lt;-</span><span class="cls_007"> cor</span><span class="cls_005">(TrainSet[,</span><span class="cls_011"> -</span><span class="cls_008">54</span><span class="cls_005">])</span></div>
+<div style="position:absolute;left:72.00px;top:255.59px" class="cls_007"><span class="cls_007">corrplot</span><span class="cls_005">(corMatrix,</span><span class="cls_012"> order =</span><span class="cls_009"> "FPC"</span><span class="cls_005">,</span><span class="cls_012"> method</span></div>
+<div style="position:absolute;left:291.68px;top:255.59px" class="cls_012"><span class="cls_012">=</span><span class="cls_009"> "color"</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:349.21px;top:255.59px" class="cls_012"><span class="cls_012">type</span></div>
+<div style="position:absolute;left:375.36px;top:255.59px" class="cls_012"><span class="cls_012">=</span></div>
+<div style="position:absolute;left:385.82px;top:255.59px" class="cls_009"><span class="cls_009">"lower"</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:119.07px;top:267.54px" class="cls_012"><span class="cls_012">tl.cex =</span><span class="cls_008"> 0.8</span><span class="cls_005">,</span><span class="cls_012"> tl.col</span></div>
+<div style="position:absolute;left:228.91px;top:267.54px" class="cls_012"><span class="cls_012">=</span></div>
+<div style="position:absolute;left:239.37px;top:267.54px" class="cls_007"><span class="cls_007">rgb</span><span class="cls_005">(</span><span class="cls_008">0</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:275.98px;top:267.54px" class="cls_008"><span class="cls_008">0</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:291.68px;top:267.54px" class="cls_008"><span class="cls_008">0</span><span class="cls_005">))</span></div>
+<div style="position:absolute;left:161.16px;top:296.56px" class="cls_013"><span class="cls_013">accel_belt_y</span></div>
+<div style="position:absolute;left:181.73px;top:301.67px" class="cls_013"><span class="cls_013">roll_belt</span></div>
+<div style="position:absolute;left:147.26px;top:306.78px" class="cls_013"><span class="cls_013">total_accel_belt</span></div>
+<div style="position:absolute;left:126.80px;top:311.89px" class="cls_013"><span class="cls_013">magnet_dumbbell_x</span></div>
+<div style="position:absolute;left:136.81px;top:316.99px" class="cls_013"><span class="cls_013">accel_dumbbell_x</span></div>
+<div style="position:absolute;left:177.68px;top:322.10px" class="cls_013"><span class="cls_013">yaw_belt</span></div>
+<div style="position:absolute;left:136.81px;top:327.21px" class="cls_013"><span class="cls_013">accel_dumbbell_z</span></div>
+<div style="position:absolute;left:159.81px;top:332.32px" class="cls_013"><span class="cls_013">accel_arm_x</span></div>
+<div style="position:absolute;left:155.66px;top:337.43px" class="cls_013"><span class="cls_013">pitch_forearm</span></div>
+<div style="position:absolute;left:153.33px;top:342.53px" class="cls_013"><span class="cls_013">yaw_dumbbell</span></div>
+<div style="position:absolute;left:158.70px;top:347.64px" class="cls_013"><span class="cls_013">gyros_arm_z</span></div>
+<div style="position:absolute;left:159.81px;top:352.75px" class="cls_013"><span class="cls_013">accel_arm_z</span></div>
+<div style="position:absolute;left:149.59px;top:357.86px" class="cls_013"><span class="cls_013">pitch_dumbbell</span></div>
+<div style="position:absolute;left:149.80px;top:362.97px" class="cls_013"><span class="cls_013">magnet_arm_x</span></div>
+<div style="position:absolute;left:160.05px;top:368.07px" class="cls_013"><span class="cls_013">gyros_belt_y</span></div>
+<div style="position:absolute;left:141.77px;top:373.18px" class="cls_013"><span class="cls_013">gyros_forearm_x</span></div>
+<div style="position:absolute;left:173.94px;top:378.29px" class="cls_013"><span class="cls_013">pitch_belt</span></div>
+<div style="position:absolute;left:132.87px;top:383.40px" class="cls_013"><span class="cls_013">magnet_forearm_z</span></div>
+<div style="position:absolute;left:142.88px;top:388.51px" class="cls_013"><span class="cls_013">accel_forearm_z</span></div>
+<div style="position:absolute;left:135.70px;top:393.62px" class="cls_013"><span class="cls_013">gyros_dumbbell_x</span></div>
+<div style="position:absolute;left:158.70px;top:398.72px" class="cls_013"><span class="cls_013">gyros_arm_x</span></div>
+<div style="position:absolute;left:141.77px;top:403.83px" class="cls_013"><span class="cls_013">gyros_forearm_y</span></div>
+<div style="position:absolute;left:135.70px;top:408.94px" class="cls_013"><span class="cls_013">gyros_dumbbell_z</span></div>
+<div style="position:absolute;left:135.70px;top:414.05px" class="cls_013"><span class="cls_013">gyros_dumbbell_y</span></div>
+<div style="position:absolute;left:141.77px;top:419.16px" class="cls_013"><span class="cls_013">gyros_forearm_z</span></div>
+<div style="position:absolute;left:151.15px;top:424.26px" class="cls_013"><span class="cls_013">magnet_belt_x</span></div>
+<div style="position:absolute;left:128.98px;top:429.37px" class="cls_013"><span class="cls_013">total_accel_forearm</span></div>
+<div style="position:absolute;left:158.64px;top:434.48px" class="cls_013"><span class="cls_013">num_window</span></div>
+<div style="position:absolute;left:132.87px;top:439.59px" class="cls_013"><span class="cls_013">magnet_forearm_y</span></div>
+<div style="position:absolute;left:161.16px;top:444.70px" class="cls_013"><span class="cls_013">accel_belt_x</span></div>
+<div style="position:absolute;left:149.80px;top:449.80px" class="cls_013"><span class="cls_013">magnet_arm_z</span></div>
+<div style="position:absolute;left:172.59px;top:454.91px" class="cls_013"><span class="cls_013">pitch_arm</span></div>
+<div style="position:absolute;left:176.33px;top:460.02px" class="cls_013"><span class="cls_013">yaw_arm</span></div>
+<div style="position:absolute;left:142.88px;top:465.13px" class="cls_013"><span class="cls_013">accel_forearm_y</span></div>
+<div style="position:absolute;left:180.38px;top:470.24px" class="cls_013"><span class="cls_013">roll_arm</span></div>
+<div style="position:absolute;left:163.45px;top:475.35px" class="cls_013"><span class="cls_013">roll_forearm</span></div>
+<div style="position:absolute;left:151.15px;top:480.45px" class="cls_013"><span class="cls_013">magnet_belt_z</span></div>
+<div style="position:absolute;left:149.80px;top:485.56px" class="cls_013"><span class="cls_013">magnet_arm_y</span></div>
+<div style="position:absolute;left:158.70px;top:490.67px" class="cls_013"><span class="cls_013">gyros_arm_y</span></div>
+<div style="position:absolute;left:157.38px;top:495.78px" class="cls_013"><span class="cls_013">roll_dumbbell</span></div>
+<div style="position:absolute;left:132.87px;top:500.89px" class="cls_013"><span class="cls_013">magnet_forearm_x</span></div>
+<div style="position:absolute;left:145.91px;top:505.99px" class="cls_013"><span class="cls_013">total_accel_arm</span></div>
+<div style="position:absolute;left:160.05px;top:511.10px" class="cls_013"><span class="cls_013">gyros_belt_x</span></div>
+<div style="position:absolute;left:159.40px;top:516.21px" class="cls_013"><span class="cls_013">yaw_forearm</span></div>
+<div style="position:absolute;left:151.15px;top:521.32px" class="cls_013"><span class="cls_013">magnet_belt_y</span></div>
+<div style="position:absolute;left:126.80px;top:526.43px" class="cls_013"><span class="cls_013">magnet_dumbbell_y</span></div>
+<div style="position:absolute;left:126.80px;top:531.53px" class="cls_013"><span class="cls_013">magnet_dumbbell_z</span></div>
+<div style="position:absolute;left:122.91px;top:536.64px" class="cls_013"><span class="cls_013">total_accel_dumbbell</span></div>
+<div style="position:absolute;left:160.05px;top:541.75px" class="cls_013"><span class="cls_013">gyros_belt_z</span></div>
+<div style="position:absolute;left:142.88px;top:546.86px" class="cls_013"><span class="cls_013">accel_forearm_x</span></div>
+<div style="position:absolute;left:136.81px;top:551.97px" class="cls_013"><span class="cls_013">accel_dumbbell_y</span></div>
+<div style="position:absolute;left:159.81px;top:557.08px" class="cls_013"><span class="cls_013">accel_arm_y</span></div>
+<div style="position:absolute;left:161.16px;top:562.18px" class="cls_013"><span class="cls_013">accel_belt_z</span></div>
+<div style="position:absolute;left:216.80px;top:594.65px" class="cls_013"><span class="cls_013">−1</span></div>
+<div style="position:absolute;left:239.71px;top:594.56px" class="cls_013"><span class="cls_013">−0.8</span></div>
+<div style="position:absolute;left:266.78px;top:594.56px" class="cls_013"><span class="cls_013">−0.6</span></div>
+<div style="position:absolute;left:293.85px;top:594.56px" class="cls_013"><span class="cls_013">−0.4</span></div>
+<div style="position:absolute;left:320.92px;top:594.56px" class="cls_013"><span class="cls_013">−0.2</span></div>
+<div style="position:absolute;left:355.09px;top:594.56px" class="cls_013"><span class="cls_013">0</span></div>
+<div style="position:absolute;left:377.99px;top:594.56px" class="cls_013"><span class="cls_013">0.2</span></div>
+<div style="position:absolute;left:405.06px;top:594.56px" class="cls_013"><span class="cls_013">0.4</span></div>
+<div style="position:absolute;left:432.14px;top:594.56px" class="cls_013"><span class="cls_013">0.6</span></div>
+<div style="position:absolute;left:459.21px;top:594.56px" class="cls_013"><span class="cls_013">0.8</span></div>
+<div style="position:absolute;left:490.45px;top:594.65px" class="cls_013"><span class="cls_013">1</span></div>
+<div style="position:absolute;left:72.00px;top:618.72px" class="cls_005"><span class="cls_005">The highly correlated variables are shown in dark colors in the graph above. To make an even more compact</span></div>
+<div style="position:absolute;left:72.00px;top:630.68px" class="cls_005"><span class="cls_005">analysis, a PCA (Principal Components Analysis) could be performed as pre-processing step to the datasets.</span></div>
+<div style="position:absolute;left:72.00px;top:642.63px" class="cls_005"><span class="cls_005">Nevertheless, as the correlations are quite few, this step will not be applied for this assignment.</span></div>
+<div style="position:absolute;left:72.00px;top:672.70px" class="cls_004"><span class="cls_004">4. Prediction Model Building</span></div>
+<div style="position:absolute;left:72.00px;top:698.08px" class="cls_005"><span class="cls_005">Three popular methods will be applied to model the regressions (in the Train dataset) and the best one (with</span></div>
+<div style="position:absolute;left:72.00px;top:710.04px" class="cls_005"><span class="cls_005">higher accuracy when applied to the Test dataset) will be used for the quiz predictions. The methods are:</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background05.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:72.00px" class="cls_005"><span class="cls_005">Random Forests, Decision Tree and Generalized Boosted Model, as described below. A Confusion Matrix is</span></div>
+<div style="position:absolute;left:72.00px;top:83.96px" class="cls_005"><span class="cls_005">plotted at the end of each analysis to better visualize the accuracy of the models.</span></div>
+<div style="position:absolute;left:72.00px;top:118.06px" class="cls_006"><span class="cls_006">a. Random Forests</span></div>
+<div style="position:absolute;left:72.00px;top:160.26px" class="cls_010"><span class="cls_010"># model fit</span></div>
+<div style="position:absolute;left:72.00px;top:172.22px" class="cls_007"><span class="cls_007">set.seed</span><span class="cls_005">(</span><span class="cls_008">301</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:184.17px" class="cls_005"><span class="cls_005">controlRF &lt;-</span><span class="cls_007"> trainControl</span><span class="cls_005">(</span><span class="cls_012">method=</span><span class="cls_009">"cv"</span><span class="cls_005">,</span><span class="cls_012"> number=</span><span class="cls_008">3</span><span class="cls_005">,</span><span class="cls_012"> verboseIter=</span><span class="cls_010">FALSE</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:196.13px" class="cls_005"><span class="cls_005">modFitRandForest &lt;-</span><span class="cls_007"> train</span><span class="cls_005">(classe</span><span class="cls_011"> ~</span><span class="cls_005"> .,</span><span class="cls_012"> data=</span><span class="cls_005">TrainSet,</span><span class="cls_012"> method=</span><span class="cls_009">"rf"</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:207.99px;top:208.09px" class="cls_012"><span class="cls_012">trControl=</span><span class="cls_005">controlRF)</span></div>
+<div style="position:absolute;left:72.00px;top:232.00px" class="cls_005"><span class="cls_005">modFitRandForest</span><span class="cls_011">$</span><span class="cls_005">finalModel</span></div>
+<div style="position:absolute;left:72.00px;top:262.29px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:274.25px" class="cls_005"><span class="cls_005">## Call:</span></div>
+<div style="position:absolute;left:72.00px;top:286.20px" class="cls_005"><span class="cls_005">##   randomForest(x = x, y = y, mtry = param$mtry)</span></div>
+<div style="position:absolute;left:72.00px;top:298.16px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:166.15px;top:298.16px" class="cls_005"><span class="cls_005">Type of random forest: classification</span></div>
+<div style="position:absolute;left:72.00px;top:310.11px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:197.53px;top:310.11px" class="cls_005"><span class="cls_005">Number of trees: 500</span></div>
+<div style="position:absolute;left:72.00px;top:322.07px" class="cls_005"><span class="cls_005">## No. of variables tried at each split: 27</span></div>
+<div style="position:absolute;left:72.00px;top:334.02px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:345.98px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:129.53px;top:345.98px" class="cls_005"><span class="cls_005">OOB estimate of   error rate: 0.23%</span></div>
+<div style="position:absolute;left:72.00px;top:357.93px" class="cls_005"><span class="cls_005">## Confusion matrix:</span></div>
+<div style="position:absolute;left:72.00px;top:369.89px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:113.84px;top:369.89px" class="cls_005"><span class="cls_005">A</span></div>
+<div style="position:absolute;left:139.99px;top:369.89px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:166.15px;top:369.89px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:192.30px;top:369.89px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:218.45px;top:369.89px" class="cls_005"><span class="cls_005">E  class.error</span></div>
+<div style="position:absolute;left:72.00px;top:381.84px" class="cls_005"><span class="cls_005">## A 3904</span></div>
+<div style="position:absolute;left:139.99px;top:381.84px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:166.15px;top:381.84px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:192.30px;top:381.84px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:218.45px;top:381.84px" class="cls_005"><span class="cls_005">1 0.0005120328</span></div>
+<div style="position:absolute;left:72.00px;top:393.80px" class="cls_005"><span class="cls_005">## B</span></div>
+<div style="position:absolute;left:113.84px;top:393.80px" class="cls_005"><span class="cls_005">6 2648</span></div>
+<div style="position:absolute;left:166.15px;top:393.80px" class="cls_005"><span class="cls_005">3</span></div>
+<div style="position:absolute;left:192.30px;top:393.80px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:218.45px;top:393.80px" class="cls_005"><span class="cls_005">0 0.0037622272</span></div>
+<div style="position:absolute;left:72.00px;top:405.75px" class="cls_005"><span class="cls_005">## C</span></div>
+<div style="position:absolute;left:113.84px;top:405.75px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:139.99px;top:405.75px" class="cls_005"><span class="cls_005">5 2391</span></div>
+<div style="position:absolute;left:192.30px;top:405.75px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:218.45px;top:405.75px" class="cls_005"><span class="cls_005">0 0.0020868114</span></div>
+<div style="position:absolute;left:72.00px;top:417.71px" class="cls_005"><span class="cls_005">## D</span></div>
+<div style="position:absolute;left:113.84px;top:417.71px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:139.99px;top:417.71px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:166.15px;top:417.71px" class="cls_005"><span class="cls_005">8 2243</span></div>
+<div style="position:absolute;left:218.45px;top:417.71px" class="cls_005"><span class="cls_005">1 0.0039964476</span></div>
+<div style="position:absolute;left:72.00px;top:429.66px" class="cls_005"><span class="cls_005">## E</span></div>
+<div style="position:absolute;left:113.84px;top:429.66px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:139.99px;top:429.66px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:166.15px;top:429.66px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:192.30px;top:429.66px" class="cls_005"><span class="cls_005">5 2519 0.0023762376</span></div>
+<div style="position:absolute;left:72.00px;top:453.40px" class="cls_010"><span class="cls_010"># prediction on Test dataset</span></div>
+<div style="position:absolute;left:72.00px;top:465.35px" class="cls_005"><span class="cls_005">predictRandForest &lt;-</span><span class="cls_007"> predict</span><span class="cls_005">(modFitRandForest,</span><span class="cls_012"> newdata=</span><span class="cls_005">TestSet)</span></div>
+<div style="position:absolute;left:72.00px;top:477.31px" class="cls_005"><span class="cls_005">confMatRandForest &lt;-</span><span class="cls_007"> confusionMatrix</span><span class="cls_005">(predictRandForest, TestSet</span><span class="cls_011">$</span><span class="cls_005">classe)</span></div>
+<div style="position:absolute;left:72.00px;top:489.27px" class="cls_005"><span class="cls_005">confMatRandForest</span></div>
+<div style="position:absolute;left:72.00px;top:518.75px" class="cls_005"><span class="cls_005">## Confusion Matrix and Statistics</span></div>
+<div style="position:absolute;left:72.00px;top:530.71px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:542.67px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:139.99px;top:542.67px" class="cls_005"><span class="cls_005">Reference</span></div>
+<div style="position:absolute;left:72.00px;top:554.62px" class="cls_005"><span class="cls_005">## Prediction</span></div>
+<div style="position:absolute;left:160.92px;top:554.62px" class="cls_005"><span class="cls_005">A</span></div>
+<div style="position:absolute;left:187.07px;top:554.62px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:213.22px;top:554.62px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:239.37px;top:554.62px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:265.52px;top:554.62px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:72.00px;top:566.58px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:566.58px" class="cls_005"><span class="cls_005">A 1674</span></div>
+<div style="position:absolute;left:187.07px;top:566.58px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:213.22px;top:566.58px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:239.37px;top:566.58px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:265.52px;top:566.58px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:72.00px;top:578.53px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:578.53px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:160.92px;top:578.53px" class="cls_005"><span class="cls_005">0 1137</span></div>
+<div style="position:absolute;left:213.22px;top:578.53px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:239.37px;top:578.53px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:265.52px;top:578.53px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:72.00px;top:590.49px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:590.49px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:160.92px;top:590.49px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:187.07px;top:590.49px" class="cls_005"><span class="cls_005">1 1026</span></div>
+<div style="position:absolute;left:239.37px;top:590.49px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:265.52px;top:590.49px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:72.00px;top:602.44px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:602.44px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:160.92px;top:602.44px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:187.07px;top:602.44px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:213.22px;top:602.44px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:228.91px;top:602.44px" class="cls_005"><span class="cls_005">963</span></div>
+<div style="position:absolute;left:265.52px;top:602.44px" class="cls_005"><span class="cls_005">4</span></div>
+<div style="position:absolute;left:72.00px;top:614.40px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:614.40px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:160.92px;top:614.40px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:187.07px;top:614.40px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:213.22px;top:614.40px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:239.37px;top:614.40px" class="cls_005"><span class="cls_005">0 1078</span></div>
+<div style="position:absolute;left:72.00px;top:626.35px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:638.31px" class="cls_005"><span class="cls_005">## Overall Statistics</span></div>
+<div style="position:absolute;left:72.00px;top:650.26px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:662.22px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:166.15px;top:662.22px" class="cls_005"><span class="cls_005">Accuracy : 0.9988</span></div>
+<div style="position:absolute;left:72.00px;top:674.17px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:176.61px;top:674.17px" class="cls_005"><span class="cls_005">95% CI : (0.9976, 0.9995)</span></div>
+<div style="position:absolute;left:72.00px;top:686.13px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:686.13px" class="cls_005"><span class="cls_005">No Information Rate : 0.2845</span></div>
+<div style="position:absolute;left:72.00px;top:698.08px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:698.08px" class="cls_005"><span class="cls_005">P-Value [Acc > NIR] : &lt; 2.2e-16</span></div>
+<div style="position:absolute;left:72.00px;top:710.04px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background06.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:72.00px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:181.84px;top:72.00px" class="cls_005"><span class="cls_005">Kappa : 0.9985</span></div>
+<div style="position:absolute;left:72.00px;top:83.96px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:95.91px" class="cls_005"><span class="cls_005">##   Mcnemar's Test P-Value : NA</span></div>
+<div style="position:absolute;left:72.00px;top:107.87px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:119.82px" class="cls_005"><span class="cls_005">## Statistics by Class:</span></div>
+<div style="position:absolute;left:72.00px;top:131.78px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:143.73px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:197.53px;top:143.73px" class="cls_005"><span class="cls_005">Class: A Class: B Class: C Class: D Class: E</span></div>
+<div style="position:absolute;left:72.00px;top:155.69px" class="cls_005"><span class="cls_005">## Sensitivity</span></div>
+<div style="position:absolute;left:207.99px;top:155.69px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:255.06px;top:155.69px" class="cls_005"><span class="cls_005">0.9982</span></div>
+<div style="position:absolute;left:302.14px;top:155.69px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:349.21px;top:155.69px" class="cls_005"><span class="cls_005">0.9990</span></div>
+<div style="position:absolute;left:396.28px;top:155.69px" class="cls_005"><span class="cls_005">0.9963</span></div>
+<div style="position:absolute;left:72.00px;top:167.64px" class="cls_005"><span class="cls_005">## Specificity</span></div>
+<div style="position:absolute;left:207.99px;top:167.64px" class="cls_005"><span class="cls_005">0.9998</span></div>
+<div style="position:absolute;left:255.06px;top:167.64px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:302.14px;top:167.64px" class="cls_005"><span class="cls_005">0.9996</span></div>
+<div style="position:absolute;left:349.21px;top:167.64px" class="cls_005"><span class="cls_005">0.9992</span></div>
+<div style="position:absolute;left:396.28px;top:167.64px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:72.00px;top:179.60px" class="cls_005"><span class="cls_005">## Pos Pred Value</span></div>
+<div style="position:absolute;left:207.99px;top:179.60px" class="cls_005"><span class="cls_005">0.9994</span></div>
+<div style="position:absolute;left:255.06px;top:179.60px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:302.14px;top:179.60px" class="cls_005"><span class="cls_005">0.9981</span></div>
+<div style="position:absolute;left:349.21px;top:179.60px" class="cls_005"><span class="cls_005">0.9959</span></div>
+<div style="position:absolute;left:396.28px;top:179.60px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:72.00px;top:191.55px" class="cls_005"><span class="cls_005">## Neg Pred Value</span></div>
+<div style="position:absolute;left:207.99px;top:191.55px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:255.06px;top:191.55px" class="cls_005"><span class="cls_005">0.9996</span></div>
+<div style="position:absolute;left:302.14px;top:191.55px" class="cls_005"><span class="cls_005">1.0000</span></div>
+<div style="position:absolute;left:349.21px;top:191.55px" class="cls_005"><span class="cls_005">0.9998</span></div>
+<div style="position:absolute;left:396.28px;top:191.55px" class="cls_005"><span class="cls_005">0.9992</span></div>
+<div style="position:absolute;left:72.00px;top:203.51px" class="cls_005"><span class="cls_005">## Prevalence</span></div>
+<div style="position:absolute;left:207.99px;top:203.51px" class="cls_005"><span class="cls_005">0.2845</span></div>
+<div style="position:absolute;left:255.06px;top:203.51px" class="cls_005"><span class="cls_005">0.1935</span></div>
+<div style="position:absolute;left:302.14px;top:203.51px" class="cls_005"><span class="cls_005">0.1743</span></div>
+<div style="position:absolute;left:349.21px;top:203.51px" class="cls_005"><span class="cls_005">0.1638</span></div>
+<div style="position:absolute;left:396.28px;top:203.51px" class="cls_005"><span class="cls_005">0.1839</span></div>
+<div style="position:absolute;left:72.00px;top:215.46px" class="cls_005"><span class="cls_005">## Detection Rate</span></div>
+<div style="position:absolute;left:207.99px;top:215.46px" class="cls_005"><span class="cls_005">0.2845</span></div>
+<div style="position:absolute;left:255.06px;top:215.46px" class="cls_005"><span class="cls_005">0.1932</span></div>
+<div style="position:absolute;left:302.14px;top:215.46px" class="cls_005"><span class="cls_005">0.1743</span></div>
+<div style="position:absolute;left:349.21px;top:215.46px" class="cls_005"><span class="cls_005">0.1636</span></div>
+<div style="position:absolute;left:396.28px;top:215.46px" class="cls_005"><span class="cls_005">0.1832</span></div>
+<div style="position:absolute;left:72.00px;top:227.42px" class="cls_005"><span class="cls_005">## Detection Prevalence</span></div>
+<div style="position:absolute;left:207.99px;top:227.42px" class="cls_005"><span class="cls_005">0.2846</span></div>
+<div style="position:absolute;left:255.06px;top:227.42px" class="cls_005"><span class="cls_005">0.1932</span></div>
+<div style="position:absolute;left:302.14px;top:227.42px" class="cls_005"><span class="cls_005">0.1747</span></div>
+<div style="position:absolute;left:349.21px;top:227.42px" class="cls_005"><span class="cls_005">0.1643</span></div>
+<div style="position:absolute;left:396.28px;top:227.42px" class="cls_005"><span class="cls_005">0.1832</span></div>
+<div style="position:absolute;left:72.00px;top:239.37px" class="cls_005"><span class="cls_005">## Balanced Accuracy</span></div>
+<div style="position:absolute;left:207.99px;top:239.37px" class="cls_005"><span class="cls_005">0.9999</span></div>
+<div style="position:absolute;left:255.06px;top:239.37px" class="cls_005"><span class="cls_005">0.9991</span></div>
+<div style="position:absolute;left:302.14px;top:239.37px" class="cls_005"><span class="cls_005">0.9998</span></div>
+<div style="position:absolute;left:349.21px;top:239.37px" class="cls_005"><span class="cls_005">0.9991</span></div>
+<div style="position:absolute;left:396.28px;top:239.37px" class="cls_005"><span class="cls_005">0.9982</span></div>
+<div style="position:absolute;left:72.00px;top:260.66px" class="cls_010"><span class="cls_010"># plotting matrix results</span></div>
+<div style="position:absolute;left:72.00px;top:272.61px" class="cls_007"><span class="cls_007">plot</span><span class="cls_005">(confMatRandForest</span><span class="cls_011">$</span><span class="cls_005">table,</span><span class="cls_012"> col =</span><span class="cls_005"> confMatRandForest</span><span class="cls_011">$</span><span class="cls_005">byClass,</span></div>
+<div style="position:absolute;left:98.15px;top:284.57px" class="cls_012"><span class="cls_012">main =</span><span class="cls_007"> paste</span><span class="cls_005">(</span><span class="cls_009">"Random Forest - Accuracy ="</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:166.15px;top:296.52px" class="cls_007"><span class="cls_007">round</span><span class="cls_005">(confMatRandForest</span><span class="cls_011">$</span><span class="cls_005">overall[</span><span class="cls_009">'Accuracy'</span><span class="cls_005">],</span><span class="cls_008"> 4</span><span class="cls_005">)))</span></div>
+<div style="position:absolute;left:200.25px;top:343.57px" class="cls_014"><span class="cls_014">Random Forest − Accuracy = 0.9988</span></div>
+<div style="position:absolute;left:191.62px;top:379.36px" class="cls_015"><span class="cls_015">A</span></div>
+<div style="position:absolute;left:273.44px;top:379.36px" class="cls_015"><span class="cls_015">B</span></div>
+<div style="position:absolute;left:337.78px;top:379.36px" class="cls_015"><span class="cls_015">C</span></div>
+<div style="position:absolute;left:397.81px;top:379.36px" class="cls_015"><span class="cls_015">D</span></div>
+<div style="position:absolute;left:459.39px;top:379.36px" class="cls_015"><span class="cls_015">E</span></div>
+<div style="position:absolute;left:293.72px;top:587.50px" class="cls_016"><span class="cls_016">Prediction</span></div>
+<div style="position:absolute;left:72.00px;top:649.01px" class="cls_005"><span class="cls_005">#b. Decision Tree</span></div>
+<div style="position:absolute;left:72.00px;top:669.03px" class="cls_010"><span class="cls_010"># model fit</span></div>
+<div style="position:absolute;left:72.00px;top:680.98px" class="cls_007"><span class="cls_007">set.seed</span><span class="cls_005">(</span><span class="cls_008">301</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:692.94px" class="cls_005"><span class="cls_005">modFitDecTree &lt;-</span><span class="cls_007"> rpart</span><span class="cls_005">(classe</span><span class="cls_011"> ~</span><span class="cls_005"> .,</span><span class="cls_012"> data=</span><span class="cls_005">TrainSet,</span><span class="cls_012"> method=</span><span class="cls_009">"class"</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:704.89px" class="cls_007"><span class="cls_007">fancyRpartPlot</span><span class="cls_005">(modFitDecTree)</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background07.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:72.00px" class="cls_005"><span class="cls_005">## Warning: labs do not fit even at cex 0.15, there may be some overplotting</span></div>
+<div style="position:absolute;left:359.59px;top:126.78px" class="cls_017"><span class="cls_017">1</span></div>
+<div style="position:absolute;left:359.20px;top:128.12px" class="cls_018"><span class="cls_018">A</span></div>
+<div style="position:absolute;left:350.69px;top:130.28px" class="cls_018"><span class="cls_018">.28  .19  .17  .16  .18</span></div>
+<div style="position:absolute;left:357.31px;top:132.44px" class="cls_018"><span class="cls_018">100%</span></div>
+<div style="position:absolute;left:353.19px;top:135.90px" class="cls_019"><span class="cls_019">roll_belt &lt; 131</span></div>
+<div style="position:absolute;left:345.27px;top:136.58px" class="cls_017"><span class="cls_017">yes</span></div>
+<div style="position:absolute;left:371.88px;top:136.57px" class="cls_017"><span class="cls_017">no</span></div>
+<div style="position:absolute;left:353.19px;top:135.90px" class="cls_019"><span class="cls_019">roll_belt &lt; 131</span></div>
+<div style="position:absolute;left:345.27px;top:136.58px" class="cls_017"><span class="cls_017">yes</span></div>
+<div style="position:absolute;left:371.88px;top:136.57px" class="cls_017"><span class="cls_017">no</span></div>
+<div style="position:absolute;left:219.85px;top:164.73px" class="cls_017"><span class="cls_017">2</span></div>
+<div style="position:absolute;left:219.46px;top:166.07px" class="cls_018"><span class="cls_018">A</span></div>
+<div style="position:absolute;left:210.95px;top:168.23px" class="cls_018"><span class="cls_018">.31  .21  .19  .18  .11</span></div>
+<div style="position:absolute;left:218.12px;top:170.39px" class="cls_018"><span class="cls_018">92%</span></div>
+<div style="position:absolute;left:327.58px;top:172.15px" class="cls_017"><span class="cls_017">5</span></div>
+<div style="position:absolute;left:210.65px;top:173.78px" class="cls_019"><span class="cls_019">pitch_forearm &lt; −34pitch_forearm &lt; −34</span></div>
+<div style="position:absolute;left:327.19px;top:175.67px" class="cls_018"><span class="cls_018">A.25  .23  .21  .20  .12</span></div>
+<div style="position:absolute;left:325.86px;top:177.83px" class="cls_018"><span class="cls_018">84%</span></div>
+<div style="position:absolute;left:319.25px;top:181.30px" class="cls_019"><span class="cls_019">roll_forearm &lt; 125</span></div>
+<div style="position:absolute;left:319.25px;top:181.30px" class="cls_019"><span class="cls_019">roll_forearm &lt; 125</span></div>
+<div style="position:absolute;left:408.90px;top:194.86px" class="cls_017"><span class="cls_017">11</span></div>
+<div style="position:absolute;left:408.90px;top:194.86px" class="cls_017"><span class="cls_017">11</span></div>
+<div style="position:absolute;left:408.74px;top:196.20px" class="cls_018"><span class="cls_018">C</span></div>
+<div style="position:absolute;left:400.28px;top:198.36px" class="cls_018"><span class="cls_018">.07  .21  .30  .21  .21</span></div>
+<div style="position:absolute;left:407.46px;top:200.52px" class="cls_018"><span class="cls_018">30%</span></div>
+<div style="position:absolute;left:396.99px;top:203.89px" class="cls_019"><span class="cls_019">magnet_dumbbell_y &lt; 291</span></div>
+<div style="position:absolute;left:396.99px;top:203.89px" class="cls_019"><span class="cls_019">magnet_dumbbell_y &lt; 291</span></div>
+<div style="position:absolute;left:245.70px;top:210.10px" class="cls_017"><span class="cls_017">10</span></div>
+<div style="position:absolute;left:245.59px;top:211.45px" class="cls_018"><span class="cls_018">A</span></div>
+<div style="position:absolute;left:245.70px;top:210.10px" class="cls_017"><span class="cls_017">10</span></div>
+<div style="position:absolute;left:237.08px;top:213.61px" class="cls_018"><span class="cls_018">.35  .24  .15  .19  .07</span></div>
+<div style="position:absolute;left:244.25px;top:215.77px" class="cls_018"><span class="cls_018">54%</span></div>
+<div style="position:absolute;left:315.12px;top:217.55px" class="cls_017"><span class="cls_017">2121</span></div>
+<div style="position:absolute;left:459.12px;top:217.54px" class="cls_017"><span class="cls_017">2323</span></div>
+<div style="position:absolute;left:233.79px;top:219.14px" class="cls_019"><span class="cls_019">magnet_dumbbell_y &lt; 440magnet_dumbbell_y &lt; 440</span></div>
+<div style="position:absolute;left:315.01px;top:218.89px" class="cls_018"><span class="cls_018">B</span></div>
+<div style="position:absolute;left:459.01px;top:218.89px" class="cls_018"><span class="cls_018">E</span></div>
+<div style="position:absolute;left:306.51px;top:221.05px" class="cls_018"><span class="cls_018">.05  .52  .03  .29  .119%</span></div>
+<div style="position:absolute;left:450.50px;top:221.05px" class="cls_018"><span class="cls_018">.04  .29  .11  .27  .2915%</span></div>
+<div style="position:absolute;left:302.40px;top:226.67px" class="cls_019"><span class="cls_019">total_accel_dumbbell >= 5.5total_accel_dumbbell >= 5.5</span></div>
+<div style="position:absolute;left:447.83px;top:226.68px" class="cls_019"><span class="cls_019">accel_forearm_x >= −107accel_forearm_x >= −107</span></div>
+<div style="position:absolute;left:176.27px;top:232.79px" class="cls_017"><span class="cls_017">2020</span></div>
+<div style="position:absolute;left:358.69px;top:232.80px" class="cls_017"><span class="cls_017">22</span></div>
+<div style="position:absolute;left:358.69px;top:232.80px" class="cls_017"><span class="cls_017">22</span></div>
+<div style="position:absolute;left:176.16px;top:236.31px" class="cls_018"><span class="cls_018">A.41  .18  .18  .17  .06</span></div>
+<div style="position:absolute;left:358.52px;top:236.31px" class="cls_018"><span class="cls_018">C.09  .13  .48  .15  .14</span></div>
+<div style="position:absolute;left:174.83px;top:238.47px" class="cls_018"><span class="cls_018">44%</span></div>
+<div style="position:absolute;left:211.67px;top:240.24px" class="cls_017"><span class="cls_017">4141</span></div>
+<div style="position:absolute;left:357.24px;top:238.47px" class="cls_018"><span class="cls_018">16%</span></div>
+<div style="position:absolute;left:373.21px;top:240.23px" class="cls_017"><span class="cls_017">4545</span></div>
+<div style="position:absolute;left:164.39px;top:241.83px" class="cls_019"><span class="cls_019">magnet_dumbbell_z &lt; −27magnet_dumbbell_z &lt; −27</span></div>
+<div style="position:absolute;left:211.55px;top:243.74px" class="cls_018"><span class="cls_018">A.28  .17  .27  .21  .07</span></div>
+<div style="position:absolute;left:350.68px;top:241.93px" class="cls_019"><span class="cls_019">num_window &lt; 89num_window &lt; 89</span></div>
+<div style="position:absolute;left:373.04px;top:243.74px" class="cls_018"><span class="cls_018">C.09  .08  .54  .17  .11</span></div>
+<div style="position:absolute;left:210.22px;top:245.90px" class="cls_018"><span class="cls_018">29%</span></div>
+<div style="position:absolute;left:371.76px;top:245.90px" class="cls_018"><span class="cls_018">14%</span></div>
+<div style="position:absolute;left:203.10px;top:249.37px" class="cls_019"><span class="cls_019">num_window &lt; 242num_window &lt; 242</span></div>
+<div style="position:absolute;left:360.77px;top:249.27px" class="cls_019"><span class="cls_019">magnet_dumbbell_z >= 285magnet_dumbbell_z >= 285</span></div>
+<div style="position:absolute;left:140.88px;top:256.84px" class="cls_017"><span class="cls_017">4040</span><span class="cls_018">A</span></div>
+<div style="position:absolute;left:438.55px;top:256.84px" class="cls_017"><span class="cls_017">4646</span><span class="cls_018">E</span></div>
+<div style="position:absolute;left:132.26px;top:259.00px" class="cls_018"><span class="cls_018">.67  .21  .01  .08  .0315%</span></div>
+<div style="position:absolute;left:253.41px;top:262.93px" class="cls_017"><span class="cls_017">8383</span></div>
+<div style="position:absolute;left:429.93px;top:259.00px" class="cls_018"><span class="cls_018">.03  .36  .14  .10  .3710%</span></div>
+<div style="position:absolute;left:131.66px;top:264.62px" class="cls_019"><span class="cls_019">roll_forearm >= −136roll_forearm >= −136</span></div>
+<div style="position:absolute;left:253.25px;top:266.44px" class="cls_018"><span class="cls_018">C.10  .22  .35  .26  .07</span></div>
+<div style="position:absolute;left:430.98px;top:264.62px" class="cls_019"><span class="cls_019">roll_belt >= −0.85roll_belt >= −0.85</span></div>
+<div style="position:absolute;left:251.97px;top:268.60px" class="cls_018"><span class="cls_018">22%</span></div>
+<div style="position:absolute;left:241.93px;top:271.97px" class="cls_019"><span class="cls_019">accel_dumbbell_y >= −40</span></div>
+<div style="position:absolute;left:241.93px;top:271.97px" class="cls_019"><span class="cls_019">accel_dumbbell_y >= −40</span></div>
+<div style="position:absolute;left:416.77px;top:278.18px" class="cls_017"><span class="cls_017">92</span></div>
+<div style="position:absolute;left:416.66px;top:279.53px" class="cls_018"><span class="cls_018">B</span></div>
+<div style="position:absolute;left:416.77px;top:278.18px" class="cls_017"><span class="cls_017">92</span></div>
+<div style="position:absolute;left:408.15px;top:281.69px" class="cls_018"><span class="cls_018">.04  .43  .17  .08  .27</span></div>
+<div style="position:absolute;left:415.88px;top:283.85px" class="cls_018"><span class="cls_018">8%</span></div>
+<div style="position:absolute;left:431.01px;top:285.62px" class="cls_017"><span class="cls_017">185</span></div>
+<div style="position:absolute;left:431.01px;top:285.62px" class="cls_017"><span class="cls_017">185</span></div>
+<div style="position:absolute;left:406.41px;top:287.22px" class="cls_019"><span class="cls_019">magnet_belt_z >= −331</span></div>
+<div style="position:absolute;left:406.41px;top:287.22px" class="cls_019"><span class="cls_019">magnet_belt_z >= −331</span></div>
+<div style="position:absolute;left:431.18px;top:286.97px" class="cls_018"><span class="cls_018">E</span></div>
+<div style="position:absolute;left:422.67px;top:289.13px" class="cls_018"><span class="cls_018">.10  .31  .00  .05  .54</span></div>
+<div style="position:absolute;left:430.40px;top:291.29px" class="cls_018"><span class="cls_018">3%</span></div>
+<div style="position:absolute;left:423.06px;top:294.75px" class="cls_019"><span class="cls_019">roll_dumbbell &lt; 41</span></div>
+<div style="position:absolute;left:423.06px;top:294.75px" class="cls_019"><span class="cls_019">roll_dumbbell &lt; 41</span></div>
+<div style="position:absolute;left:220.46px;top:300.87px" class="cls_017"><span class="cls_017">166</span></div>
+<div style="position:absolute;left:220.46px;top:300.87px" class="cls_017"><span class="cls_017">166</span></div>
+<div style="position:absolute;left:220.58px;top:302.22px" class="cls_018"><span class="cls_018">D</span></div>
+<div style="position:absolute;left:212.12px;top:304.38px" class="cls_018"><span class="cls_018">.12  .25  .25  .30  .08</span></div>
+<div style="position:absolute;left:219.30px;top:306.54px" class="cls_018"><span class="cls_018">19%</span></div>
+<div style="position:absolute;left:242.24px;top:308.31px" class="cls_017"><span class="cls_017">333333</span></div>
+<div style="position:absolute;left:214.04px;top:310.00px" class="cls_019"><span class="cls_019">roll_belt >= 126</span></div>
+<div style="position:absolute;left:233.90px;top:311.82px" class="cls_018"><span class="cls_018">.16  .21  .15  .38  .10</span></div>
+<div style="position:absolute;left:214.04px;top:310.00px" class="cls_019"><span class="cls_019">roll_belt >= 126</span></div>
+<div style="position:absolute;left:242.36px;top:309.66px" class="cls_018"><span class="cls_018">D</span></div>
+<div style="position:absolute;left:241.08px;top:313.98px" class="cls_018"><span class="cls_018">14%</span></div>
+<div style="position:absolute;left:236.06px;top:317.35px" class="cls_019"><span class="cls_019">yaw_belt &lt; −88</span></div>
+<div style="position:absolute;left:236.06px;top:317.35px" class="cls_019"><span class="cls_019">yaw_belt &lt; −88</span></div>
+<div style="position:absolute;left:198.68px;top:323.56px" class="cls_017"><span class="cls_017">332</span></div>
+<div style="position:absolute;left:198.79px;top:324.91px" class="cls_018"><span class="cls_018">C</span></div>
+<div style="position:absolute;left:198.68px;top:323.56px" class="cls_017"><span class="cls_017">332</span></div>
+<div style="position:absolute;left:190.34px;top:327.07px" class="cls_018"><span class="cls_018">.00  .38  .58  .03  .004%</span></div>
+<div style="position:absolute;left:256.76px;top:331.00px" class="cls_017"><span class="cls_017">667667</span></div>
+<div style="position:absolute;left:191.97px;top:332.62px" class="cls_019"><span class="cls_019">pitch_belt &lt; −43pitch_belt &lt; −43</span></div>
+<div style="position:absolute;left:256.88px;top:334.51px" class="cls_018"><span class="cls_018">D.13  .11  .13  .54  .09</span></div>
+<div style="position:absolute;left:256.15px;top:336.67px" class="cls_018"><span class="cls_018">9%</span></div>
+<div style="position:absolute;left:250.05px;top:340.06px" class="cls_019"><span class="cls_019">pitch_belt &lt; −42</span></div>
+<div style="position:absolute;left:250.05px;top:340.06px" class="cls_019"><span class="cls_019">pitch_belt &lt; −42</span></div>
+<div style="position:absolute;left:131.20px;top:377.74px" class="cls_017"><span class="cls_017">8080</span><span class="cls_018">A</span></div>
+<div style="position:absolute;left:169.92px;top:377.74px" class="cls_017"><span class="cls_017">8282</span><span class="cls_018">A</span></div>
+<div style="position:absolute;left:208.36px;top:376.39px" class="cls_017"><span class="cls_017">665665</span><span class="cls_018">C</span></div>
+<div style="position:absolute;left:246.81px;top:376.39px" class="cls_017"><span class="cls_017">13341334</span><span class="cls_018">A</span></div>
+<div style="position:absolute;left:285.81px;top:376.39px" class="cls_017"><span class="cls_017">167167</span><span class="cls_018">C</span></div>
+<div style="position:absolute;left:324.80px;top:377.74px" class="cls_017"><span class="cls_017">4343</span><span class="cls_018">D</span></div>
+<div style="position:absolute;left:363.53px;top:377.74px" class="cls_017"><span class="cls_017">9090</span><span class="cls_018">A</span></div>
+<div style="position:absolute;left:401.97px;top:376.39px" class="cls_017"><span class="cls_017">184184</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:440.69px;top:376.39px" class="cls_017"><span class="cls_017">371371</span><span class="cls_018">E</span></div>
+<div style="position:absolute;left:479.69px;top:377.74px" class="cls_017"><span class="cls_017">4747</span><span class="cls_018">D</span></div>
+<div style="position:absolute;left:122.58px;top:379.90px" class="cls_018"><span class="cls_018">.78  .17  .01  .03  .01</span></div>
+<div style="position:absolute;left:161.30px;top:379.90px" class="cls_018"><span class="cls_018">.84  .00  .00  .06  .09</span></div>
+<div style="position:absolute;left:200.02px;top:379.90px" class="cls_018"><span class="cls_018">.00  .02  .96  .02  .00</span></div>
+<div style="position:absolute;left:238.74px;top:379.90px" class="cls_018"><span class="cls_018">.40  .32  .17  .10  .01</span></div>
+<div style="position:absolute;left:277.47px;top:379.90px" class="cls_018"><span class="cls_018">.00  .05  .92  .03  .00</span></div>
+<div style="position:absolute;left:316.19px;top:379.90px" class="cls_018"><span class="cls_018">.00  .16  .00  .74  .10</span></div>
+<div style="position:absolute;left:354.91px;top:379.90px" class="cls_018"><span class="cls_018">.50  .14  .05  .10  .21</span></div>
+<div style="position:absolute;left:393.63px;top:379.90px" class="cls_018"><span class="cls_018">.01  .51  .27  .10  .12</span></div>
+<div style="position:absolute;left:432.35px;top:379.90px" class="cls_018"><span class="cls_018">.12  .04  .00  .07  .77</span></div>
+<div style="position:absolute;left:471.07px;top:379.90px" class="cls_018"><span class="cls_018">.06  .14  .04  .65  .12</span></div>
+<div style="position:absolute;left:129.75px;top:382.06px" class="cls_018"><span class="cls_018">13%</span></div>
+<div style="position:absolute;left:169.03px;top:382.06px" class="cls_018"><span class="cls_018">7%</span></div>
+<div style="position:absolute;left:207.75px;top:382.06px" class="cls_018"><span class="cls_018">3%</span></div>
+<div style="position:absolute;left:246.47px;top:382.06px" class="cls_018"><span class="cls_018">3%</span></div>
+<div style="position:absolute;left:285.19px;top:382.06px" class="cls_018"><span class="cls_018">3%</span></div>
+<div style="position:absolute;left:323.92px;top:382.06px" class="cls_018"><span class="cls_018">4%</span></div>
+<div style="position:absolute;left:362.64px;top:382.06px" class="cls_018"><span class="cls_018">2%</span></div>
+<div style="position:absolute;left:401.36px;top:382.06px" class="cls_018"><span class="cls_018">5%</span></div>
+<div style="position:absolute;left:440.08px;top:382.06px" class="cls_018"><span class="cls_018">2%</span></div>
+<div style="position:absolute;left:478.80px;top:382.06px" class="cls_018"><span class="cls_018">4%</span></div>
+<div style="position:absolute;left:112.12px;top:392.99px" class="cls_017"><span class="cls_017">4</span><span class="cls_018">A</span></div>
+<div style="position:absolute;left:150.56px;top:392.99px" class="cls_017"><span class="cls_017">8181</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:189.00px;top:391.64px" class="cls_017"><span class="cls_017">664664</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:227.72px;top:391.64px" class="cls_017"><span class="cls_017">666666</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:266.17px;top:391.64px" class="cls_017"><span class="cls_017">13351335</span><span class="cls_018">D</span></div>
+<div style="position:absolute;left:305.44px;top:392.99px" class="cls_017"><span class="cls_017">4242</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:344.17px;top:392.99px" class="cls_017"><span class="cls_017">4444</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:382.89px;top:392.99px" class="cls_017"><span class="cls_017">9191</span><span class="cls_018">C</span></div>
+<div style="position:absolute;left:421.33px;top:391.64px" class="cls_017"><span class="cls_017">370370</span><span class="cls_018">B</span></div>
+<div style="position:absolute;left:460.33px;top:392.99px" class="cls_017"><span class="cls_017">9393</span><span class="cls_018">E</span></div>
+<div style="position:absolute;left:499.33px;top:392.99px" class="cls_017"><span class="cls_017">3</span><span class="cls_018">E</span></div>
+<div style="position:absolute;left:103.22px;top:395.15px" class="cls_018"><span class="cls_018">.99  .01  .00  .00  .008%</span></div>
+<div style="position:absolute;left:141.94px;top:395.15px" class="cls_018"><span class="cls_018">.11  .40  .01  .34  .143%</span></div>
+<div style="position:absolute;left:180.66px;top:395.15px" class="cls_018"><span class="cls_018">.00  .92  .00  .06  .012%</span></div>
+<div style="position:absolute;left:219.38px;top:395.15px" class="cls_018"><span class="cls_018">.20  .35  .19  .14  .126%</span></div>
+<div style="position:absolute;left:258.10px;top:395.15px" class="cls_018"><span class="cls_018">.01  .02  .11  .73  .136%</span></div>
+<div style="position:absolute;left:296.83px;top:395.15px" class="cls_018"><span class="cls_018">.08  .75  .05  .01  .126%</span></div>
+<div style="position:absolute;left:335.55px;top:395.15px" class="cls_018"><span class="cls_018">.08  .55  .00  .00  .372%</span></div>
+<div style="position:absolute;left:374.27px;top:395.15px" class="cls_018"><span class="cls_018">.01  .07  .64  .19  .0912%</span></div>
+<div style="position:absolute;left:412.99px;top:395.15px" class="cls_018"><span class="cls_018">.06  .89  .00  .00  .051%</span></div>
+<div style="position:absolute;left:451.71px;top:395.15px" class="cls_018"><span class="cls_018">.00  .00  .00  .19  .812%</span></div>
+<div style="position:absolute;left:490.99px;top:395.15px" class="cls_018"><span class="cls_018">01  .00  .00  .00  .998%</span></div>
+<div style="position:absolute;left:226.52px;top:408.79px" class="cls_016"><span class="cls_016">Rattle 2020−May−17 00:03:33 user</span></div>
+<div style="position:absolute;left:72.00px;top:438.05px" class="cls_010"><span class="cls_010"># prediction on Test dataset</span></div>
+<div style="position:absolute;left:72.00px;top:450.01px" class="cls_005"><span class="cls_005">predictDecTree &lt;-</span><span class="cls_007"> predict</span><span class="cls_005">(modFitDecTree,</span><span class="cls_012"> newdata=</span><span class="cls_005">TestSet,</span><span class="cls_012"> type=</span><span class="cls_009">"class"</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:461.96px" class="cls_005"><span class="cls_005">confMatDecTree &lt;-</span><span class="cls_007"> confusionMatrix</span><span class="cls_005">(predictDecTree, TestSet</span><span class="cls_011">$</span><span class="cls_005">classe)</span></div>
+<div style="position:absolute;left:72.00px;top:473.92px" class="cls_005"><span class="cls_005">confMatDecTree</span></div>
+<div style="position:absolute;left:72.00px;top:504.80px" class="cls_005"><span class="cls_005">## Confusion Matrix and Statistics</span></div>
+<div style="position:absolute;left:72.00px;top:516.76px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:528.71px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:139.99px;top:528.71px" class="cls_005"><span class="cls_005">Reference</span></div>
+<div style="position:absolute;left:72.00px;top:540.67px" class="cls_005"><span class="cls_005">## Prediction</span></div>
+<div style="position:absolute;left:160.92px;top:540.67px" class="cls_005"><span class="cls_005">A</span></div>
+<div style="position:absolute;left:187.07px;top:540.67px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:213.22px;top:540.67px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:239.37px;top:540.67px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:265.52px;top:540.67px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:72.00px;top:552.62px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:552.62px" class="cls_005"><span class="cls_005">A 1497</span></div>
+<div style="position:absolute;left:176.61px;top:552.62px" class="cls_005"><span class="cls_005">209</span></div>
+<div style="position:absolute;left:207.99px;top:552.62px" class="cls_005"><span class="cls_005">55</span></div>
+<div style="position:absolute;left:234.14px;top:552.62px" class="cls_005"><span class="cls_005">73</span></div>
+<div style="position:absolute;left:260.29px;top:552.62px" class="cls_005"><span class="cls_005">76</span></div>
+<div style="position:absolute;left:72.00px;top:564.58px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:564.58px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:150.46px;top:564.58px" class="cls_005"><span class="cls_005">128</span></div>
+<div style="position:absolute;left:176.61px;top:564.58px" class="cls_005"><span class="cls_005">781</span></div>
+<div style="position:absolute;left:202.76px;top:564.58px" class="cls_005"><span class="cls_005">156</span></div>
+<div style="position:absolute;left:228.91px;top:564.58px" class="cls_005"><span class="cls_005">180</span></div>
+<div style="position:absolute;left:255.06px;top:564.58px" class="cls_005"><span class="cls_005">184</span></div>
+<div style="position:absolute;left:72.00px;top:576.54px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:576.54px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:160.92px;top:576.54px" class="cls_005"><span class="cls_005">8</span></div>
+<div style="position:absolute;left:181.84px;top:576.54px" class="cls_005"><span class="cls_005">56</span></div>
+<div style="position:absolute;left:202.76px;top:576.54px" class="cls_005"><span class="cls_005">780</span></div>
+<div style="position:absolute;left:228.91px;top:576.54px" class="cls_005"><span class="cls_005">107</span></div>
+<div style="position:absolute;left:260.29px;top:576.54px" class="cls_005"><span class="cls_005">68</span></div>
+<div style="position:absolute;left:72.00px;top:588.49px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:588.49px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:155.69px;top:588.49px" class="cls_005"><span class="cls_005">25</span></div>
+<div style="position:absolute;left:181.84px;top:588.49px" class="cls_005"><span class="cls_005">84</span></div>
+<div style="position:absolute;left:207.99px;top:588.49px" class="cls_005"><span class="cls_005">35</span></div>
+<div style="position:absolute;left:228.91px;top:588.49px" class="cls_005"><span class="cls_005">571</span></div>
+<div style="position:absolute;left:260.29px;top:588.49px" class="cls_005"><span class="cls_005">90</span></div>
+<div style="position:absolute;left:72.00px;top:600.45px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:600.45px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:155.69px;top:600.45px" class="cls_005"><span class="cls_005">16</span></div>
+<div style="position:absolute;left:187.07px;top:600.45px" class="cls_005"><span class="cls_005">9</span></div>
+<div style="position:absolute;left:213.22px;top:600.45px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:234.14px;top:600.45px" class="cls_005"><span class="cls_005">33</span></div>
+<div style="position:absolute;left:255.06px;top:600.45px" class="cls_005"><span class="cls_005">664</span></div>
+<div style="position:absolute;left:72.00px;top:612.40px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:624.36px" class="cls_005"><span class="cls_005">## Overall Statistics</span></div>
+<div style="position:absolute;left:72.00px;top:636.31px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:648.27px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:166.15px;top:648.27px" class="cls_005"><span class="cls_005">Accuracy : 0.7295</span></div>
+<div style="position:absolute;left:72.00px;top:660.22px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:176.61px;top:660.22px" class="cls_005"><span class="cls_005">95% CI : (0.7179, 0.7408)</span></div>
+<div style="position:absolute;left:72.00px;top:672.18px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:672.18px" class="cls_005"><span class="cls_005">No Information Rate : 0.2845</span></div>
+<div style="position:absolute;left:72.00px;top:684.13px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:684.13px" class="cls_005"><span class="cls_005">P-Value [Acc > NIR] : &lt; 2.2e-16</span></div>
+<div style="position:absolute;left:72.00px;top:696.09px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:708.04px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:181.84px;top:708.04px" class="cls_005"><span class="cls_005">Kappa : 0.6556</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background08.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.00px;top:72.00px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:83.96px" class="cls_005"><span class="cls_005">##   Mcnemar's Test P-Value : &lt; 2.2e-16</span></div>
+<div style="position:absolute;left:72.00px;top:95.91px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:107.87px" class="cls_005"><span class="cls_005">## Statistics by Class:</span></div>
+<div style="position:absolute;left:72.00px;top:119.82px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:131.78px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:197.53px;top:131.78px" class="cls_005"><span class="cls_005">Class: A Class: B Class: C Class: D Class: E</span></div>
+<div style="position:absolute;left:72.00px;top:143.73px" class="cls_005"><span class="cls_005">## Sensitivity</span></div>
+<div style="position:absolute;left:207.99px;top:143.73px" class="cls_005"><span class="cls_005">0.8943</span></div>
+<div style="position:absolute;left:255.06px;top:143.73px" class="cls_005"><span class="cls_005">0.6857</span></div>
+<div style="position:absolute;left:302.14px;top:143.73px" class="cls_005"><span class="cls_005">0.7602</span></div>
+<div style="position:absolute;left:343.98px;top:143.73px" class="cls_005"><span class="cls_005">0.59232</span></div>
+<div style="position:absolute;left:396.28px;top:143.73px" class="cls_005"><span class="cls_005">0.6137</span></div>
+<div style="position:absolute;left:72.00px;top:155.69px" class="cls_005"><span class="cls_005">## Specificity</span></div>
+<div style="position:absolute;left:207.99px;top:155.69px" class="cls_005"><span class="cls_005">0.9019</span></div>
+<div style="position:absolute;left:255.06px;top:155.69px" class="cls_005"><span class="cls_005">0.8635</span></div>
+<div style="position:absolute;left:302.14px;top:155.69px" class="cls_005"><span class="cls_005">0.9508</span></div>
+<div style="position:absolute;left:343.98px;top:155.69px" class="cls_005"><span class="cls_005">0.95245</span></div>
+<div style="position:absolute;left:396.28px;top:155.69px" class="cls_005"><span class="cls_005">0.9879</span></div>
+<div style="position:absolute;left:72.00px;top:167.64px" class="cls_005"><span class="cls_005">## Pos Pred Value</span></div>
+<div style="position:absolute;left:207.99px;top:167.64px" class="cls_005"><span class="cls_005">0.7838</span></div>
+<div style="position:absolute;left:255.06px;top:167.64px" class="cls_005"><span class="cls_005">0.5465</span></div>
+<div style="position:absolute;left:302.14px;top:167.64px" class="cls_005"><span class="cls_005">0.7655</span></div>
+<div style="position:absolute;left:343.98px;top:167.64px" class="cls_005"><span class="cls_005">0.70932</span></div>
+<div style="position:absolute;left:396.28px;top:167.64px" class="cls_005"><span class="cls_005">0.9197</span></div>
+<div style="position:absolute;left:72.00px;top:179.60px" class="cls_005"><span class="cls_005">## Neg Pred Value</span></div>
+<div style="position:absolute;left:207.99px;top:179.60px" class="cls_005"><span class="cls_005">0.9555</span></div>
+<div style="position:absolute;left:255.06px;top:179.60px" class="cls_005"><span class="cls_005">0.9197</span></div>
+<div style="position:absolute;left:302.14px;top:179.60px" class="cls_005"><span class="cls_005">0.9494</span></div>
+<div style="position:absolute;left:343.98px;top:179.60px" class="cls_005"><span class="cls_005">0.92264</span></div>
+<div style="position:absolute;left:396.28px;top:179.60px" class="cls_005"><span class="cls_005">0.9190</span></div>
+<div style="position:absolute;left:72.00px;top:191.55px" class="cls_005"><span class="cls_005">## Prevalence</span></div>
+<div style="position:absolute;left:207.99px;top:191.55px" class="cls_005"><span class="cls_005">0.2845</span></div>
+<div style="position:absolute;left:255.06px;top:191.55px" class="cls_005"><span class="cls_005">0.1935</span></div>
+<div style="position:absolute;left:302.14px;top:191.55px" class="cls_005"><span class="cls_005">0.1743</span></div>
+<div style="position:absolute;left:343.98px;top:191.55px" class="cls_005"><span class="cls_005">0.16381</span></div>
+<div style="position:absolute;left:396.28px;top:191.55px" class="cls_005"><span class="cls_005">0.1839</span></div>
+<div style="position:absolute;left:72.00px;top:203.51px" class="cls_005"><span class="cls_005">## Detection Rate</span></div>
+<div style="position:absolute;left:207.99px;top:203.51px" class="cls_005"><span class="cls_005">0.2544</span></div>
+<div style="position:absolute;left:255.06px;top:203.51px" class="cls_005"><span class="cls_005">0.1327</span></div>
+<div style="position:absolute;left:302.14px;top:203.51px" class="cls_005"><span class="cls_005">0.1325</span></div>
+<div style="position:absolute;left:343.98px;top:203.51px" class="cls_005"><span class="cls_005">0.09703</span></div>
+<div style="position:absolute;left:396.28px;top:203.51px" class="cls_005"><span class="cls_005">0.1128</span></div>
+<div style="position:absolute;left:72.00px;top:215.46px" class="cls_005"><span class="cls_005">## Detection Prevalence</span></div>
+<div style="position:absolute;left:207.99px;top:215.46px" class="cls_005"><span class="cls_005">0.3246</span></div>
+<div style="position:absolute;left:255.06px;top:215.46px" class="cls_005"><span class="cls_005">0.2428</span></div>
+<div style="position:absolute;left:302.14px;top:215.46px" class="cls_005"><span class="cls_005">0.1732</span></div>
+<div style="position:absolute;left:343.98px;top:215.46px" class="cls_005"><span class="cls_005">0.13679</span></div>
+<div style="position:absolute;left:396.28px;top:215.46px" class="cls_005"><span class="cls_005">0.1227</span></div>
+<div style="position:absolute;left:72.00px;top:227.42px" class="cls_005"><span class="cls_005">## Balanced Accuracy</span></div>
+<div style="position:absolute;left:207.99px;top:227.42px" class="cls_005"><span class="cls_005">0.8981</span></div>
+<div style="position:absolute;left:255.06px;top:227.42px" class="cls_005"><span class="cls_005">0.7746</span></div>
+<div style="position:absolute;left:302.14px;top:227.42px" class="cls_005"><span class="cls_005">0.8555</span></div>
+<div style="position:absolute;left:343.98px;top:227.42px" class="cls_005"><span class="cls_005">0.77239</span></div>
+<div style="position:absolute;left:396.28px;top:227.42px" class="cls_005"><span class="cls_005">0.8008</span></div>
+<div style="position:absolute;left:72.00px;top:252.31px" class="cls_010"><span class="cls_010"># plotting matrix results</span></div>
+<div style="position:absolute;left:72.00px;top:264.27px" class="cls_007"><span class="cls_007">plot</span><span class="cls_005">(confMatDecTree</span><span class="cls_011">$</span><span class="cls_005">table,</span><span class="cls_012"> col =</span><span class="cls_005"> confMatDecTree</span><span class="cls_011">$</span><span class="cls_005">byClass,</span></div>
+<div style="position:absolute;left:98.15px;top:276.22px" class="cls_012"><span class="cls_012">main =</span><span class="cls_007"> paste</span><span class="cls_005">(</span><span class="cls_009">"Decision Tree - Accuracy ="</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:166.15px;top:288.18px" class="cls_007"><span class="cls_007">round</span><span class="cls_005">(confMatDecTree</span><span class="cls_011">$</span><span class="cls_005">overall[</span><span class="cls_009">'Accuracy'</span><span class="cls_005">],</span><span class="cls_008"> 4</span><span class="cls_005">)))</span></div>
+<div style="position:absolute;left:206.24px;top:338.84px" class="cls_014"><span class="cls_014">Decision Tree − Accuracy = 0.7295</span></div>
+<div style="position:absolute;left:197.89px;top:374.63px" class="cls_015"><span class="cls_015">A</span></div>
+<div style="position:absolute;left:293.76px;top:374.63px" class="cls_015"><span class="cls_015">B</span></div>
+<div style="position:absolute;left:365.65px;top:374.63px" class="cls_015"><span class="cls_015">C</span></div>
+<div style="position:absolute;left:421.11px;top:374.63px" class="cls_015"><span class="cls_015">D</span></div>
+<div style="position:absolute;left:468.88px;top:374.63px" class="cls_015"><span class="cls_015">E</span></div>
+<div style="position:absolute;left:293.72px;top:582.77px" class="cls_016"><span class="cls_016">Prediction</span></div>
+<div style="position:absolute;left:72.00px;top:644.28px" class="cls_005"><span class="cls_005">#c. Generalized Boosted Model (GBM)</span></div>
+<div style="position:absolute;left:72.00px;top:667.19px" class="cls_010"><span class="cls_010"># model fit</span></div>
+<div style="position:absolute;left:72.00px;top:679.14px" class="cls_007"><span class="cls_007">set.seed</span><span class="cls_005">(</span><span class="cls_008">301</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:691.10px" class="cls_005"><span class="cls_005">controlGBM &lt;-</span><span class="cls_007"> trainControl</span><span class="cls_005">(</span><span class="cls_012">method =</span><span class="cls_009"> "repeatedcv"</span><span class="cls_005">,</span><span class="cls_012"> number =</span><span class="cls_008"> 5</span><span class="cls_005">,</span><span class="cls_012"> repeats =</span><span class="cls_008"> 1</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:703.05px" class="cls_005"><span class="cls_005">modFitGBM</span></div>
+<div style="position:absolute;left:129.53px;top:703.05px" class="cls_005"><span class="cls_005">&lt;-</span><span class="cls_007"> train</span><span class="cls_005">(classe</span><span class="cls_011"> ~</span><span class="cls_005"> .,</span><span class="cls_012"> data=</span><span class="cls_005">TrainSet,</span><span class="cls_012"> method =</span><span class="cls_009"> "gbm"</span><span class="cls_005">,</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">8</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background09.jpg" width=612 height=792></div>
+<div style="position:absolute;left:176.61px;top:75.93px" class="cls_012"><span class="cls_012">trControl =</span><span class="cls_005"> controlGBM,</span><span class="cls_012"> verbose =</span><span class="cls_010"> FALSE</span><span class="cls_005">)</span></div>
+<div style="position:absolute;left:72.00px;top:99.84px" class="cls_005"><span class="cls_005">modFitGBM</span><span class="cls_011">$</span><span class="cls_005">finalModel</span></div>
+<div style="position:absolute;left:72.00px;top:131.53px" class="cls_005"><span class="cls_005">## A gradient boosted model with multinomial loss function.</span></div>
+<div style="position:absolute;left:72.00px;top:143.49px" class="cls_005"><span class="cls_005">## 150 iterations were performed.</span></div>
+<div style="position:absolute;left:72.00px;top:155.44px" class="cls_005"><span class="cls_005">## There were 53 predictors of which 53 had non-zero influence.</span></div>
+<div style="position:absolute;left:72.00px;top:180.34px" class="cls_010"><span class="cls_010"># prediction on Test dataset</span></div>
+<div style="position:absolute;left:72.00px;top:192.29px" class="cls_005"><span class="cls_005">predictGBM &lt;-</span><span class="cls_007"> predict</span><span class="cls_005">(modFitGBM,</span><span class="cls_012"> newdata=</span><span class="cls_005">TestSet)</span></div>
+<div style="position:absolute;left:72.00px;top:204.25px" class="cls_005"><span class="cls_005">confMatGBM &lt;-</span><span class="cls_007"> confusionMatrix</span><span class="cls_005">(predictGBM, TestSet</span><span class="cls_011">$</span><span class="cls_005">classe)</span></div>
+<div style="position:absolute;left:72.00px;top:216.20px" class="cls_005"><span class="cls_005">confMatGBM</span></div>
+<div style="position:absolute;left:72.00px;top:247.09px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:247.09px" class="cls_005"><span class="cls_005">Confusion Matrix and Statistics</span></div>
+<div style="position:absolute;left:72.00px;top:259.04px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:271.00px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:139.99px;top:271.00px" class="cls_005"><span class="cls_005">Reference</span></div>
+<div style="position:absolute;left:72.00px;top:282.95px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:282.95px" class="cls_005"><span class="cls_005">Prediction</span></div>
+<div style="position:absolute;left:160.92px;top:282.95px" class="cls_005"><span class="cls_005">A</span></div>
+<div style="position:absolute;left:187.07px;top:282.95px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:213.22px;top:282.95px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:239.37px;top:282.95px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:265.52px;top:282.95px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:72.00px;top:294.91px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:294.91px" class="cls_005"><span class="cls_005">A 1670</span></div>
+<div style="position:absolute;left:181.84px;top:294.91px" class="cls_005"><span class="cls_005">12</span></div>
+<div style="position:absolute;left:213.22px;top:294.91px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:239.37px;top:294.91px" class="cls_005"><span class="cls_005">2</span></div>
+<div style="position:absolute;left:265.52px;top:294.91px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:72.00px;top:306.86px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:306.86px" class="cls_005"><span class="cls_005">B</span></div>
+<div style="position:absolute;left:160.92px;top:306.86px" class="cls_005"><span class="cls_005">4 1118</span></div>
+<div style="position:absolute;left:213.22px;top:306.86px" class="cls_005"><span class="cls_005">2</span></div>
+<div style="position:absolute;left:239.37px;top:306.86px" class="cls_005"><span class="cls_005">8</span></div>
+<div style="position:absolute;left:265.52px;top:306.86px" class="cls_005"><span class="cls_005">5</span></div>
+<div style="position:absolute;left:72.00px;top:318.82px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:318.82px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:160.92px;top:318.82px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:187.07px;top:318.82px" class="cls_005"><span class="cls_005">9 1019</span></div>
+<div style="position:absolute;left:234.14px;top:318.82px" class="cls_005"><span class="cls_005">12</span></div>
+<div style="position:absolute;left:265.52px;top:318.82px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:72.00px;top:330.77px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:330.77px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:160.92px;top:330.77px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:187.07px;top:330.77px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:213.22px;top:330.77px" class="cls_005"><span class="cls_005">4</span></div>
+<div style="position:absolute;left:228.91px;top:330.77px" class="cls_005"><span class="cls_005">942</span></div>
+<div style="position:absolute;left:260.29px;top:330.77px" class="cls_005"><span class="cls_005">10</span></div>
+<div style="position:absolute;left:72.00px;top:342.73px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:134.76px;top:342.73px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:160.92px;top:342.73px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:187.07px;top:342.73px" class="cls_005"><span class="cls_005">0</span></div>
+<div style="position:absolute;left:213.22px;top:342.73px" class="cls_005"><span class="cls_005">1</span></div>
+<div style="position:absolute;left:239.37px;top:342.73px" class="cls_005"><span class="cls_005">0 1066</span></div>
+<div style="position:absolute;left:72.00px;top:354.69px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:366.64px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:366.64px" class="cls_005"><span class="cls_005">Overall Statistics</span></div>
+<div style="position:absolute;left:72.00px;top:378.60px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:390.55px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:166.15px;top:390.55px" class="cls_005"><span class="cls_005">Accuracy : 0.9881</span></div>
+<div style="position:absolute;left:72.00px;top:402.51px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:176.61px;top:402.51px" class="cls_005"><span class="cls_005">95% CI : (0.985, 0.9907)</span></div>
+<div style="position:absolute;left:72.00px;top:414.46px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:414.46px" class="cls_005"><span class="cls_005">No Information Rate : 0.2845</span></div>
+<div style="position:absolute;left:72.00px;top:426.42px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:108.61px;top:426.42px" class="cls_005"><span class="cls_005">P-Value [Acc > NIR] : &lt; 2.2e-16</span></div>
+<div style="position:absolute;left:72.00px;top:438.37px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:450.33px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:181.84px;top:450.33px" class="cls_005"><span class="cls_005">Kappa : 0.985</span></div>
+<div style="position:absolute;left:72.00px;top:462.28px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:474.24px" class="cls_005"><span class="cls_005">##   Mcnemar's Test P-Value : NA</span></div>
+<div style="position:absolute;left:72.00px;top:486.19px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:498.15px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:498.15px" class="cls_005"><span class="cls_005">Statistics by Class:</span></div>
+<div style="position:absolute;left:72.00px;top:510.10px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:72.00px;top:522.06px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:197.53px;top:522.06px" class="cls_005"><span class="cls_005">Class: A Class: B Class:</span></div>
+<div style="position:absolute;left:328.29px;top:522.06px" class="cls_005"><span class="cls_005">C</span></div>
+<div style="position:absolute;left:338.75px;top:522.06px" class="cls_005"><span class="cls_005">Class:</span></div>
+<div style="position:absolute;left:375.36px;top:522.06px" class="cls_005"><span class="cls_005">D</span></div>
+<div style="position:absolute;left:385.82px;top:522.06px" class="cls_005"><span class="cls_005">Class:</span></div>
+<div style="position:absolute;left:422.43px;top:522.06px" class="cls_005"><span class="cls_005">E</span></div>
+<div style="position:absolute;left:72.00px;top:534.01px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:534.01px" class="cls_005"><span class="cls_005">Sensitivity</span></div>
+<div style="position:absolute;left:207.99px;top:534.01px" class="cls_005"><span class="cls_005">0.9976</span></div>
+<div style="position:absolute;left:255.06px;top:534.01px" class="cls_005"><span class="cls_005">0.9816</span></div>
+<div style="position:absolute;left:302.14px;top:534.01px" class="cls_005"><span class="cls_005">0.9932</span></div>
+<div style="position:absolute;left:349.21px;top:534.01px" class="cls_005"><span class="cls_005">0.9772</span></div>
+<div style="position:absolute;left:396.28px;top:534.01px" class="cls_005"><span class="cls_005">0.9852</span></div>
+<div style="position:absolute;left:72.00px;top:545.97px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:545.97px" class="cls_005"><span class="cls_005">Specificity</span></div>
+<div style="position:absolute;left:207.99px;top:545.97px" class="cls_005"><span class="cls_005">0.9967</span></div>
+<div style="position:absolute;left:255.06px;top:545.97px" class="cls_005"><span class="cls_005">0.9960</span></div>
+<div style="position:absolute;left:302.14px;top:545.97px" class="cls_005"><span class="cls_005">0.9955</span></div>
+<div style="position:absolute;left:349.21px;top:545.97px" class="cls_005"><span class="cls_005">0.9972</span></div>
+<div style="position:absolute;left:396.28px;top:545.97px" class="cls_005"><span class="cls_005">0.9998</span></div>
+<div style="position:absolute;left:72.00px;top:557.92px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:557.92px" class="cls_005"><span class="cls_005">Pos Pred Value</span></div>
+<div style="position:absolute;left:207.99px;top:557.92px" class="cls_005"><span class="cls_005">0.9917</span></div>
+<div style="position:absolute;left:255.06px;top:557.92px" class="cls_005"><span class="cls_005">0.9833</span></div>
+<div style="position:absolute;left:302.14px;top:557.92px" class="cls_005"><span class="cls_005">0.9789</span></div>
+<div style="position:absolute;left:349.21px;top:557.92px" class="cls_005"><span class="cls_005">0.9854</span></div>
+<div style="position:absolute;left:396.28px;top:557.92px" class="cls_005"><span class="cls_005">0.9991</span></div>
+<div style="position:absolute;left:72.00px;top:569.88px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:569.88px" class="cls_005"><span class="cls_005">Neg Pred Value</span></div>
+<div style="position:absolute;left:207.99px;top:569.88px" class="cls_005"><span class="cls_005">0.9990</span></div>
+<div style="position:absolute;left:255.06px;top:569.88px" class="cls_005"><span class="cls_005">0.9956</span></div>
+<div style="position:absolute;left:302.14px;top:569.88px" class="cls_005"><span class="cls_005">0.9986</span></div>
+<div style="position:absolute;left:349.21px;top:569.88px" class="cls_005"><span class="cls_005">0.9955</span></div>
+<div style="position:absolute;left:396.28px;top:569.88px" class="cls_005"><span class="cls_005">0.9967</span></div>
+<div style="position:absolute;left:72.00px;top:581.83px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:581.83px" class="cls_005"><span class="cls_005">Prevalence</span></div>
+<div style="position:absolute;left:207.99px;top:581.83px" class="cls_005"><span class="cls_005">0.2845</span></div>
+<div style="position:absolute;left:255.06px;top:581.83px" class="cls_005"><span class="cls_005">0.1935</span></div>
+<div style="position:absolute;left:302.14px;top:581.83px" class="cls_005"><span class="cls_005">0.1743</span></div>
+<div style="position:absolute;left:349.21px;top:581.83px" class="cls_005"><span class="cls_005">0.1638</span></div>
+<div style="position:absolute;left:396.28px;top:581.83px" class="cls_005"><span class="cls_005">0.1839</span></div>
+<div style="position:absolute;left:72.00px;top:593.79px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:593.79px" class="cls_005"><span class="cls_005">Detection Rate</span></div>
+<div style="position:absolute;left:207.99px;top:593.79px" class="cls_005"><span class="cls_005">0.2838</span></div>
+<div style="position:absolute;left:255.06px;top:593.79px" class="cls_005"><span class="cls_005">0.1900</span></div>
+<div style="position:absolute;left:302.14px;top:593.79px" class="cls_005"><span class="cls_005">0.1732</span></div>
+<div style="position:absolute;left:349.21px;top:593.79px" class="cls_005"><span class="cls_005">0.1601</span></div>
+<div style="position:absolute;left:396.28px;top:593.79px" class="cls_005"><span class="cls_005">0.1811</span></div>
+<div style="position:absolute;left:72.00px;top:605.74px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:605.74px" class="cls_005"><span class="cls_005">Detection Prevalence</span></div>
+<div style="position:absolute;left:207.99px;top:605.74px" class="cls_005"><span class="cls_005">0.2862</span></div>
+<div style="position:absolute;left:255.06px;top:605.74px" class="cls_005"><span class="cls_005">0.1932</span></div>
+<div style="position:absolute;left:302.14px;top:605.74px" class="cls_005"><span class="cls_005">0.1769</span></div>
+<div style="position:absolute;left:349.21px;top:605.74px" class="cls_005"><span class="cls_005">0.1624</span></div>
+<div style="position:absolute;left:396.28px;top:605.74px" class="cls_005"><span class="cls_005">0.1813</span></div>
+<div style="position:absolute;left:72.00px;top:617.70px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:87.69px;top:617.70px" class="cls_005"><span class="cls_005">Balanced Accuracy</span></div>
+<div style="position:absolute;left:207.99px;top:617.70px" class="cls_005"><span class="cls_005">0.9971</span></div>
+<div style="position:absolute;left:255.06px;top:617.70px" class="cls_005"><span class="cls_005">0.9888</span></div>
+<div style="position:absolute;left:302.14px;top:617.70px" class="cls_005"><span class="cls_005">0.9943</span></div>
+<div style="position:absolute;left:349.21px;top:617.70px" class="cls_005"><span class="cls_005">0.9872</span></div>
+<div style="position:absolute;left:396.28px;top:617.70px" class="cls_005"><span class="cls_005">0.9925</span></div>
+<div style="position:absolute;left:72.00px;top:642.60px" class="cls_010"><span class="cls_010"># plotting matrix results</span></div>
+<div style="position:absolute;left:72.00px;top:654.55px" class="cls_007"><span class="cls_007">plot</span><span class="cls_005">(confMatGBM</span><span class="cls_011">$</span><span class="cls_005">table,</span><span class="cls_012"> col =</span><span class="cls_005"> confMatGBM</span><span class="cls_011">$</span><span class="cls_005">byClass,</span></div>
+<div style="position:absolute;left:98.15px;top:666.51px" class="cls_012"><span class="cls_012">main =</span><span class="cls_007"> paste</span><span class="cls_005">(</span><span class="cls_009">"GBM - Accuracy ="</span><span class="cls_005">,</span><span class="cls_007"> round</span><span class="cls_005">(confMatGBM</span><span class="cls_011">$</span><span class="cls_005">overall[</span><span class="cls_009">'Accuracy'</span><span class="cls_005">],</span></div>
+<div style="position:absolute;left:469.51px;top:666.51px" class="cls_008"><span class="cls_008">4</span><span class="cls_005">)))</span></div>
+<div style="position:absolute;left:303.51px;top:739.93px" class="cls_005"><span class="cls_005">9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="65d824a0-97a6-11ea-8b25-0cc47a792c0a_id_65d824a0-97a6-11ea-8b25-0cc47a792c0a_files/background10.jpg" width=612 height=792></div>
+<div style="position:absolute;left:235.26px;top:92.55px" class="cls_014"><span class="cls_014">GBM − Accuracy = 0.9881</span></div>
+<div style="position:absolute;left:191.86px;top:128.34px" class="cls_015"><span class="cls_015">A</span></div>
+<div style="position:absolute;left:273.92px;top:128.34px" class="cls_015"><span class="cls_015">B</span></div>
+<div style="position:absolute;left:338.60px;top:128.34px" class="cls_015"><span class="cls_015">C</span></div>
+<div style="position:absolute;left:398.69px;top:128.34px" class="cls_015"><span class="cls_015">D</span></div>
+<div style="position:absolute;left:459.68px;top:128.34px" class="cls_015"><span class="cls_015">E</span></div>
+<div style="position:absolute;left:293.72px;top:336.48px" class="cls_016"><span class="cls_016">Prediction</span></div>
+<div style="position:absolute;left:72.00px;top:397.99px" class="cls_005"><span class="cls_005">##5.  Applying the selected Model to the Test Data The accuracy of the 3 regression modeling methods</span></div>
+<div style="position:absolute;left:72.00px;top:409.95px" class="cls_005"><span class="cls_005">above are:</span></div>
+<div style="position:absolute;left:72.00px;top:427.88px" class="cls_005"><span class="cls_005">Random Forest : 0.9968 Decision Tree : 0.8291 GBM : 0.9884 In that case, the Random Forest model will</span></div>
+<div style="position:absolute;left:72.00px;top:439.83px" class="cls_005"><span class="cls_005">be applied to predict the 20 quiz results (testing dataset) as shown below.</span></div>
+<div style="position:absolute;left:72.00px;top:463.69px" class="cls_005"><span class="cls_005">predictTEST &lt;-</span><span class="cls_007"> predict</span><span class="cls_005">(modFitRandForest,</span><span class="cls_012"> newdata=</span><span class="cls_005">testing)</span></div>
+<div style="position:absolute;left:72.00px;top:475.65px" class="cls_005"><span class="cls_005">predictTEST</span></div>
+<div style="position:absolute;left:72.00px;top:508.74px" class="cls_005"><span class="cls_005">##</span></div>
+<div style="position:absolute;left:92.92px;top:508.74px" class="cls_005"><span class="cls_005">[1] B A B A A E D B A A B C B A E E A B B B</span></div>
+<div style="position:absolute;left:72.00px;top:520.70px" class="cls_005"><span class="cls_005">## Levels: A B C D E</span></div>
+<div style="position:absolute;left:301.02px;top:739.93px" class="cls_005"><span class="cls_005">10</span></div>
+</div>
+
+</body>
+</html>
